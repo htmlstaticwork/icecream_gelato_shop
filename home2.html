@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Flavor Today | Scoops & Smiles</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .split-hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+        .hero-left {
+            padding: 100px 50px;
+        }
+        .hero-right {
+            background: url('https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?q=80&w=1200&auto=format&fit=crop') center/cover;
+            height: 100%;
+            min-height: 60vh;
+            border-radius: 0 0 0 150px;
+        }
+        .flavor-slider-container {
+            padding: 100px 0;
+            background: linear-gradient(180deg, #ffffff 0%, #fff9e6 100%);
+        }
+        .carousel-item-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+        .slider-img {
+            max-width: 400px;
+            border-radius: 50px;
+            box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+        }
+        .visit-us-section {
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: 100px 100px 0 0;
+            padding: 80px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+
+    <!-- Split Hero -->
+    <div class="container-fluid p-0 split-hero">
+        <div class="row g-0 w-100">
+            <div class="col-lg-6 hero-left bg-light">
+                <div class="fade-in-up">
+                    <span class="badge bg-secondary text-dark mb-3 px-3 py-2 rounded-pill fw-bold">NEW SUMMER ARRIVALS</span>
+                    <h1 class="display-3 fw-bold mb-4 font-heading">Find Your <span class="text-primary">Perfect Scoop</span></h1>
+                    <p class="lead mb-5 text-muted">A playground of flavors waiting for you! Handcrafted every single day for that unbeatable fresh taste.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="flavors.html" class="btn btn-primary-custom btn-lg">Explore Flavors</a>
+                        <a href="menu.html" class="btn btn-outline-dark btn-lg rounded-pill px-4">Full Menu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 hero-right d-none d-lg-block"></div>
+        </div>
+        <div class="hero-divider"></div>
+    </div>
+
+    <!-- Quick Menu Preview -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Quick Bites</h2>
+                <p>Most loved treats in Sweet City</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3 text-center">
+                    <div class="p-4 rounded-4 shadow-sm border h-100">
+                        <img src="https://images.unsplash.com/photo-1576506295286-5cda18df43e7?q=80&w=200&auto=format&fit=crop" class="img-fluid rounded-circle mb-3" alt="Cup">
+                        <h5>Standard Cup</h5>
+                        <p class="text-muted">Two scoops of joy</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="p-4 rounded-4 shadow-sm border h-100">
+                        <img src="https://images.unsplash.com/photo-1559703248-dcaaec9fab78?q=80&w=200&auto=format&fit=crop" class="img-fluid rounded-circle mb-3" alt="Waffle Cone">
+                        <h5>Waffle Cone</h5>
+                        <p class="text-muted">Classic crunch</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="p-4 rounded-4 shadow-sm border h-100">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bcc0629729b?q=80&w=200&auto=format&fit=crop" class="img-fluid rounded-circle mb-3" alt="Sundae">
+                        <h5>Loaded Sundae</h5>
+                        <p class="text-muted">Fully topped out</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="p-4 rounded-4 shadow-sm border h-100">
+                        <img src="https://images.unsplash.com/photo-1505394033323-4241b211356e?q=80&w=200&auto=format&fit=crop" class="img-fluid rounded-circle mb-3" alt="Shake">
+                        <h5>Thick Shakes</h5>
+                        <p class="text-muted">Creamy & rich</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Colorful Flavor Slider -->
+    <section class="flavor-slider-container">
+        <div class="container">
+            <div class="section-title">
+                <h2>Summer Favorites</h2>
+            </div>
+            <div id="flavorCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-item-content">
+                            <div class="row align-items-center">
+                                <div class="col-md-6 text-center mb-4 mb-md-0">
+                                    <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?q=80&w=400&auto=format&fit=crop" class="slider-img img-fluid" alt="Matcha">
+                                </div>
+                                <div class="col-md-6">
+                                    <h2 class="display-5 fw-bold text-success mb-3">Zen Matcha Solo</h2>
+                                    <p class="lead mb-4">Pure Japanese ceremonial grade matcha blended into a silk-smooth cream. It's an experience, not just a flavor.</p>
+                                    <h3 class="text-primary mb-4">$5.50 / Scoop</h3>
+                                    <a href="flavors.html" class="btn btn-accent-custom px-5">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-item-content">
+                            <div class="row align-items-center">
+                                <div class="col-md-6 text-center mb-4 mb-md-0">
+                                    <img src="https://images.unsplash.com/photo-1560008511-11c63416e52d?q=80&w=400&auto=format&fit=crop" class="slider-img img-fluid" alt="Blueberry">
+                                </div>
+                                <div class="col-md-6">
+                                    <h2 class="display-5 fw-bold text-info mb-3">Wild Blueberry Burst</h2>
+                                    <p class="lead mb-4">Organic wild blueberries hand-picked and swirled into our classic base with a hint of lemon zest.</p>
+                                    <h3 class="text-primary mb-4">$5.50 / Scoop</h3>
+                                    <a href="flavors.html" class="btn btn-accent-custom px-5">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#flavorCarousel" data-bs-slide="prev">
+                    <i class="fas fa-chevron-left fa-2x text-primary"></i>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#flavorCarousel" data-bs-slide="next">
+                    <i class="fas fa-chevron-right fa-2x text-primary"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit Us Section -->
+    <section class="visit-us-section text-center">
+        <div class="container">
+            <h2 class="display-4 fw-bold mb-5 font-heading">Find Your Flavor Today</h2>
+            <div class="row g-5">
+                <div class="col-md-4">
+                    <i class="fas fa-map-marked-alt fa-3x mb-3 text-secondary"></i>
+                    <h4>Our Location</h4>
+                    <p>123 Ice Cream Lane,<br>Sweet City, SC 5678</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-clock fa-3x mb-3 text-secondary"></i>
+                    <h4>Open Hours</h4>
+                    <p>Mon - Thu: 11 AM - 9 PM<br>Fri - Sun: 11 AM - 11 PM</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-paper-plane fa-3x mb-3 text-secondary"></i>
+                    <h4>Get In Touch</h4>
+                    <p>hello@scoopssmiles.com<br>+1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="mt-5 pt-4">
+                <a href="contact.html" class="btn btn-secondary-custom btn-lg px-5 text-dark fw-bold">Get Directions</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Common Components JS -->
+    <script src="js/loader.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
