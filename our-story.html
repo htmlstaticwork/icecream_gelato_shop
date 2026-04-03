@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,43 +13,66 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div id="header-placeholder"></div>
 
-    <!-- Navbar -->
-
     <!-- Story Hero -->
-    <header class="section-padding bg-primary text-white text-center">
-        <div class="container py-4">
-            <h1 class="display-3 fw-bold font-heading mb-3">One Scoop, One Story</h1>
-            <p class="lead mb-0">How we started, why we churn, and where we're headed.</p>
+    <section class="hero-section text-center text-white"
+        style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;">
+        <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
+            <h1 class="display-3 fw-bold mb-4 font-heading fade-in-up">Our <span
+                    style="color: var(--primary-color) !important;">Sweet Story</span></h1>
+            <p class="lead mb-0 fade-in-up">Churning joy and crafting smiles since 2018.</p>
         </div>
-        <div class="hero-divider"></div>
-    </header>
+        <div class="hero-divider hero-divider-pink"></div>
+    </section>
 
-    <!-- History -->
+    <!-- History Section -->
     <section class="section-padding">
         <div class="container">
             <div class="row align-items-center g-5">
-                <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1549395156-9747d27e1482?q=80&w=800&auto=format&fit=crop" class="img-fluid rounded-5 shadow-lg" alt="Our First Shop">
+                <div class="col-lg-6 fade-in-left">
+                    <div class="position-relative overflow-hidden rounded-5 shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?q=80&w=800&auto=format&fit=crop"
+                            class="img-fluid scoop-trigger" alt="Our First Shop" style="cursor: pointer;">
+                        <div class="pour-container"></div>
+                        <div
+                            class="position-absolute bottom-0 start-0 m-4 p-3 bg-white rounded-4 shadow-sm d-none d-md-block border-start border-4 border-primary">
+                            <h4 class="fw-bold mb-0" style="color: var(--primary-color);">Est. 2018</h4>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <h2 class="mb-4 text-primary">From a Humble Home Kitchen...</h2>
-                    <p class="mb-4">It all started in 2018, when our founder, Sarah, decided that "good enough" ice cream wasn't good enough. Armed with a single home-churning machine and a passion for local ingredients, she began experimenting with unusual flavor pairings like Lavender Honey and Salted Basil.</p>
-                    <p class="mb-4">What started as a hobby soon grew into a weekend pop-up, and eventually, our flagship store in the heart of Sweet City. Today, we're a team of dedicated "flavor architects" who believe that every scoop should bring a smile to your face.</p>
-                    <div class="d-flex gap-4 mt-5">
-                        <div class="text-center">
-                            <h3 class="text-primary fw-bold mb-0">20+</h3>
-                            <small class="text-muted">Daily Flavors</small>
+                <div class="col-lg-6 fade-in-right">
+                    <h2 class="display-5 font-heading mb-4" style="color: #FF5252;">From a Humble Home Kitchen...</h2>
+                    <p class="mb-4 lead text-muted">It all started in 2018, when our founder, Sarah, decided that "good
+                        enough" ice cream wasn't good enough. Armed with a single home-churning machine and a passion
+                        for local ingredients, she began experimenting with unusual flavor pairings.</p>
+                    <p class="mb-4 text-muted">What started as a hobby soon grew into a weekend pop-up, and eventually,
+                        our flagship store. Today, we're a team of dedicated "flavor
+                        architects" who believe that every scoop should bring a smile.</p>
+
+                    <div class="row g-4 mt-2">
+                        <div class="col-4">
+                            <div class="text-center p-3 rounded-4 bg-primary-subtle transition-all hover-up">
+                                <i class="fas fa-ice-cream fa-2x mb-2 text-primary"></i>
+                                <h3 class="fw-bold mb-0 text-primary">20+</h3>
+                                <small class="text-muted text-uppercase fw-bold" style="font-size: 0.6rem;">Flavors</small>
+                            </div>
                         </div>
-                        <div class="text-center">
-                            <h3 class="text-primary fw-bold mb-0">100%</h3>
-                            <small class="text-muted">Handcrafted</small>
+                        <div class="col-4">
+                            <div class="text-center p-3 rounded-4 bg-info-subtle transition-all hover-up">
+                                <i class="fas fa-hand-holding-heart fa-2x mb-2 text-info"></i>
+                                <h3 class="fw-bold mb-0 text-info">100%</h3>
+                                <small class="text-muted text-uppercase fw-bold" style="font-size: 0.6rem;">Handmade</small>
+                            </div>
                         </div>
-                        <div class="text-center">
-                            <h3 class="text-primary fw-bold mb-0">Local</h3>
-                            <small class="text-muted">Ingredients</small>
+                        <div class="col-4">
+                            <div class="text-center p-3 rounded-4 bg-warning-subtle transition-all hover-up">
+                                <i class="fas fa-seedling fa-2x mb-2 text-warning"></i>
+                                <h3 class="fw-bold mb-0 text-warning">Local</h3>
+                                <small class="text-muted text-uppercase fw-bold" style="font-size: 0.6rem;">Source</small>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -56,33 +80,147 @@
         </div>
     </section>
 
-    <!-- Behind the Scenes -->
-    <section class="section-padding" style="background-color: #f7fffe;">
-        <div class="container">
-            <div class="section-title">
-                <h2>Behind the <span class="text-accent">Scoop</span></h2>
-                <p>A peek into our daily magic-making process.</p>
-            </div>
+    <!-- Mission & Values Section -->
+    <section class="section-padding bg-light">
+        <div class="container text-center">
+            <h2 class="display-5 font-heading mb-2 fade-in-up" style="color: #FF5252;">Our Values</h2>
+            <p class="lead text-muted mb-5 fade-in-up">The secret ingredients behind every single scoop.</p>
             <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="p-4 bg-white rounded-5 shadow-sm h-100">
-                        <i class="fas fa-hand-holding-heart fa-2x mb-3 text-primary"></i>
-                        <h5>Sourcing</h5>
-                        <p class="text-muted">We start every morning by visiting our local dairy farms and picking the freshest seasonal fruits.</p>
+                <div class="col-md-4 fade-in-up">
+                    <div class="p-5 bg-white rounded-5 shadow-sm h-100 hover-up border-0 transition-all">
+                        <div class="mb-4 mx-auto overflow-hidden ratio ratio-1x1 rounded-circle shadow-sm position-relative"
+                            style="width: 120px;">
+                            <img src="https://images.unsplash.com/photo-1579954115545-a95591f28be0?q=80&w=400&auto=format&fit=crop"
+                                class="img-fluid object-fit-cover scoop-trigger" alt="Artisanal Quality" style="cursor: pointer;">
+                            <div class="pour-container"></div>
+                        </div>
+                        <h4 class="fw-bold mb-3">Artisanal Quality</h4>
+                        <p class="text-muted">Small batches made with patience and a whole lot of love. No shortcuts,
+                            just pure flavor.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="p-4 bg-white rounded-5 shadow-sm h-100">
-                        <i class="fas fa-temperature-low fa-2x mb-3 text-primary"></i>
-                        <h5>Churning</h5>
-                        <p class="text-muted">Our small-batch machines ensure minimum air and maximum flavor depth in every pint.</p>
+                <div class="col-md-4 fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="p-5 bg-white rounded-5 shadow-sm h-100 hover-up border-0 transition-all">
+                        <div class="mb-4 mx-auto overflow-hidden ratio ratio-1x1 rounded-circle shadow-sm position-relative"
+                            style="width: 120px;">
+                            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=400&auto=format&fit=crop"
+                                class="img-fluid object-fit-cover scoop-trigger" alt="Community First" style="cursor: pointer;">
+                            <div class="pour-container"></div>
+                        </div>
+                        <h4 class="fw-bold mb-3">Community First</h4>
+                        <p class="text-muted">We partner with local dairy farms and seasonal fruit growers to support
+                            our neighbors.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="p-4 bg-white rounded-5 shadow-sm h-100">
-                        <i class="fas fa-magic fa-2x mb-3 text-primary"></i>
-                        <h5>Perfecting</h5>
-                        <p class="text-muted">Each flavor is hand-folded with mix-ins and tested for the perfect texture before serving.</p>
+                <div class="col-md-4 fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="p-5 bg-white rounded-5 shadow-sm h-100 hover-up border-0 transition-all">
+                        <div class="mb-4 mx-auto overflow-hidden ratio ratio-1x1 rounded-circle shadow-sm position-relative"
+                            style="width: 120px;">
+                            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=400&auto=format&fit=crop"
+                                class="img-fluid object-fit-cover scoop-trigger" alt="Sustainable Joy" style="cursor: pointer;">
+                            <div class="pour-container"></div>
+                        </div>
+                        <h4 class="fw-bold mb-3">Sustainable Joy</h4>
+                        <p class="text-muted">From compostable spoons to eco-friendly packaging, we care about our sweet
+                            planet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Scoop Team -->
+    <section class="section-padding">
+        <div class="container text-center">
+            <h2 class="display-5 font-heading mb-2 fade-in-up" style="color: #FF5252;">Meet the Family</h2>
+            <p class="lead text-muted mb-5 fade-in-up">Passionately serving happiness, one scoop at a time.</p>
+            <div class="row g-5 justify-content-center">
+                <div class="col-md-4 col-lg-3 fade-in-up">
+                    <div class="team-member transition-all hover-up">
+                        <div class="mb-4 position-relative mx-auto gallery-item ratio ratio-1x1 rounded-circle overflow-hidden shadow-lg"
+                            style="width: 200px;">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop"
+                                class="img-fluid object-fit-cover scoop-trigger" alt="Founding Baker" style="cursor: pointer;">
+                            <div class="pour-container"></div>
+                        </div>
+                        <h4 class="fw-bold mb-1">Sarah Jenkins</h4>
+                        <p class="fw-bold" style="color: var(--primary-color);">Founder & Flavor Lead</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="team-member transition-all hover-up">
+                        <div class="mb-4 position-relative mx-auto gallery-item ratio ratio-1x1 rounded-circle overflow-hidden shadow-lg"
+                            style="width: 200px;">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop"
+                                class="img-fluid object-fit-cover scoop-trigger" alt="Flavor Architect" style="cursor: pointer;">
+                            <div class="pour-container"></div>
+                        </div>
+                        <h4 class="fw-bold mb-1">Marcus Lee</h4>
+                        <p class="fw-bold" style="color: var(--primary-color);">Master Churner</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="team-member transition-all hover-up">
+                        <div class="mb-4 position-relative mx-auto gallery-item ratio ratio-1x1 rounded-circle overflow-hidden shadow-lg"
+                            style="width: 200px;">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop"
+                                class="img-fluid object-fit-cover scoop-trigger" alt="Community Manager" style="cursor: pointer;">
+                            <div class="pour-container"></div>
+                        </div>
+                        <h4 class="fw-bold mb-1">Elena Rodriguez</h4>
+                        <p class="fw-bold" style="color: var(--primary-color);">Flavor Explorer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sweet Moments Gallery -->
+    <section class="section-padding bg-light">
+        <div class="container text-center">
+            <h2 class="display-5 font-heading mb-2 fade-in-up" style="color: #FF5252;">Sweet Moments</h2>
+            <p class="lead text-muted mb-5 fade-in-up">A peek into the joy we share every day.</p>
+            <div class="row g-4">
+                <div class="col-md-4 col-6 fade-in-up">
+                    <div class="gallery-item shadow-sm ratio ratio-1x1 rounded-4 overflow-hidden position-relative">
+                        <img src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?q=80&w=600&auto=format&fit=crop"
+                            class="img-fluid object-fit-cover scoop-trigger" alt="Ice Cream Cone" style="cursor: pointer;">
+                        <div class="pour-container"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="gallery-item shadow-sm ratio ratio-1x1 rounded-4 overflow-hidden position-relative">
+                        <img src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?q=80&w=600&auto=format&fit=crop"
+                            class="img-fluid object-fit-cover scoop-trigger" alt="Happy Customer" style="cursor: pointer;">
+                        <div class="pour-container"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="gallery-item shadow-sm ratio ratio-1x1 rounded-4 overflow-hidden position-relative">
+                        <img src="https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?q=80&w=600&auto=format&fit=crop" 
+                            class="img-fluid object-fit-cover scoop-trigger" alt="Shop Interior" style="cursor: pointer;">
+                        <div class="pour-container"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="gallery-item shadow-sm ratio ratio-1x1 rounded-4 overflow-hidden position-relative">
+                        <img src="https://images.unsplash.com/photo-1505394033323-424ebb29f2e7?q=80&w=600&auto=format&fit=crop" 
+                            class="img-fluid object-fit-cover scoop-trigger" alt="Ice Cream Scoop" style="cursor: pointer;">
+                        <div class="pour-container"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="gallery-item shadow-sm ratio ratio-1x1 rounded-4 overflow-hidden position-relative">
+                        <img src="https://www.kuvingsusa.com/cdn/shop/articles/kuvings-recipe-5-dairy-free-ice-cream_0897e792-449a-4ec2-9ae0-520232c96b74.png?v=1768332272"
+                            class="img-fluid object-fit-cover scoop-trigger" alt="Fruit Toppings" style="cursor: pointer;">
+                        <div class="pour-container"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 fade-in-up" style="animation-delay: 0.5s;">
+                    <div class="gallery-item shadow-sm ratio ratio-1x1 rounded-4 overflow-hidden position-relative">
+                        <img src="https://img.freepik.com/premium-photo/happy-family-enjoying-ice-cream-together-cafe_406939-28146.jpg"
+                            class="img-fluid object-fit-cover scoop-trigger" alt="Happy Kids" style="cursor: pointer;">
+                        <div class="pour-container"></div>
                     </div>
                 </div>
             </div>
@@ -100,4 +238,5 @@
     <!-- Custom JS -->
     <script src="js/main.js"></script>
 </body>
+
 </html>

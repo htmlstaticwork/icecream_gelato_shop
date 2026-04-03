@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,84 +13,184 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div id="header-placeholder"></div>
 
-    <!-- Navbar -->
-
-    <!-- Ingredients Header -->
-    <section class="section-padding" style="background-color: #fffaf0;">
-        <div class="container text-center">
-            <h1 class="display-4 fw-bold mb-4 font-heading text-primary">Better Ingredients, <br><span class="text-accent">Better Scoops</span></h1>
-            <p class="lead text-muted max-width-600 mx-auto">We believe that great ice cream starts with respect for the land and the people who farm it. No shortcuts, just pure goodness.</p>
+    <!-- Ingredients Hero -->
+    <section class="hero-section text-center text-white"
+        style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1505394033323-424ebb29f2e7?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;">
+        <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
+            <h1 class="display-3 fw-bold mb-4 font-heading fade-in-up">What's Inside <span class="text-primary-custom"
+                    style="color: var(--primary-color) !important;">Our Scoops</span></h1>
+            <p class="lead mb-0 fade-in-up">The secret to our smiles? Pure, handpicked, and honest ingredients.</p>
         </div>
+        <div class="hero-divider hero-divider-pink"></div>
     </section>
 
-    <!-- Sourcing Section -->
+    <!-- Section 1: Dairy -->
     <section class="section-padding">
         <div class="container">
             <div class="row g-5 align-items-center">
-                <div class="col-lg-6 order-lg-2">
-                    <div class="p-5 bg-white rounded-5 shadow-lg position-relative overflow-hidden">
-                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 10px; background-color: var(--accent-color);"></div>
-                        <h2 class="mb-4">Local Sourcing</h2>
-                        <ul class="list-unstyled">
-                            <li class="mb-3 d-flex align-items-center">
-                                <i class="fas fa-check-circle text-success me-3"></i>
-                                <span>Fresh milk and cream from Happy Cows Farm (only 30 miles away).</span>
-                            </li>
-                            <li class="mb-3 d-flex align-items-center">
-                                <i class="fas fa-check-circle text-success me-3"></i>
-                                <span>Seasonal fruits from Sweet Valley Orchards.</span>
-                            </li>
-                            <li class="mb-3 d-flex align-items-center">
-                                <i class="fas fa-check-circle text-success me-3"></i>
-                                <span>Organic honey from local Beekeepers Guild.</span>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="col-lg-6">
+                    <h2 class="display-5 font-heading mb-3" style="color: #FF5252;">🥛 Farm-Fresh Dairy</h2>
+                    <h4 class="h5 fw-bold text-muted mb-4">Pure & Creamy Foundations</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-4 d-flex align-items-center">
+                            <div class="icon-blob bg-primary-subtle text-primary rounded-circle me-3" style="width: 50px; height: 50px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-cow fa-lg"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Locally Sourced</h6>
+                                <p class="text-muted small mb-0">Only the freshest milk and cream from our neighboring family farms.</p>
+                            </div>
+                        </li>
+                        <li class="mb-4 d-flex align-items-center">
+                            <div class="icon-blob bg-info-subtle text-info rounded-circle me-3" style="width: 50px; height: 50px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-droplet fa-lg"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Rich Texture</h6>
+                                <p class="text-muted small mb-0">A natural, velvety smoothness in every single scoop we churn.</p>
+                            </div>
+                        </li>
+                        <li class="mb-4 d-flex align-items-center">
+                            <div class="icon-blob bg-success-subtle text-success rounded-circle me-3" style="width: 50px; height: 50px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-leaf fa-lg"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">100% Natural</h6>
+                                <p class="text-muted small mb-0">Absolutely zero artificial enhancers or fillers. Just pure goodness.</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-lg-6 order-lg-1">
-                    <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?q=80&w=800&auto=format&fit=crop" class="img-fluid rounded-5 shadow-lg" alt="Local Sourcing">
+                <div class="col-lg-6">
+                    <div class="rounded-5 shadow-lg overflow-hidden position-relative" style="height: 400px;">
+                        <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=800&auto=format&fit=crop"
+                            class="w-100 h-100 object-fit-cover scoop-trigger" alt="Farm Fresh Dairy" style="cursor: pointer;">
+                        <div class="pour-container"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Ingredients Breakdown -->
+    <!-- Section 2: Fruits -->
     <section class="section-padding bg-light">
         <div class="container">
-            <div class="section-title">
-                <h2>Our Quality Promise</h2>
-                <p>What goes into our scoops—and what stays out.</p>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <h2 class="display-5 font-heading mb-3" style="color: #FF5252;">🍓 Real Fruits & Flavors</h2>
+                    <h4 class="h5 fw-bold text-muted mb-4">Nature’s Sweetness</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-4 d-flex align-items-center">
+                            <div class="icon-blob bg-danger-subtle text-danger rounded-circle me-3" style="width: 50px; height: 50px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-apple-whole fa-lg"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Seasonal Bounty</h6>
+                                <p class="text-muted small mb-0">From tree-ripened mangoes to sun-drenched berries.</p>
+                            </div>
+                        </li>
+                        <li class="mb-4 d-flex align-items-center">
+                            <div class="icon-blob bg-warning-subtle text-warning rounded-circle me-3" style="width: 50px; height: 50px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-hand-holding-heart fa-lg"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Handpicked Quality</h6>
+                                <p class="text-muted small mb-0">Every piece of fruit is hand-inspected for peak freshness.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="rounded-5 shadow-lg overflow-hidden position-relative" style="height: 400px;">
+                        <img src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?q=80&w=800&auto=format&fit=crop"
+                            class="w-100 h-100 object-fit-cover scoop-trigger" alt="Real Fruits" style="cursor: pointer;">
+                        <div class="pour-container"></div>
+                    </div>
+                </div>
             </div>
-            <div class="row g-4 text-center">
-                <div class="col-md-3">
-                    <div class="p-4 bg-white rounded-4 shadow-sm h-100">
-                        <i class="fas fa-ban fa-2x mb-3 text-danger"></i>
-                        <h5>No Artificials</h5>
-                        <p class="small text-muted">Zero artificial flavors, colors, or preservatives. Ever.</p>
+        </div>
+    </section>
+
+    <!-- Section 3: Add-ins -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-5 font-heading mb-3" style="color: #FF5252;">🍫 Premium Add-Ins</h2>
+                    <h4 class="h5 fw-bold text-muted mb-4">Elevated Indulgence</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-4 d-flex align-items-center">
+                            <div class="icon-blob bg-dark-subtle text-dark rounded-circle me-3" style="width: 50px; height: 50px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-cookie fa-lg"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Gourmet Chocolate</h6>
+                                <p class="text-muted small mb-0">Finest Belgian chocolate and rich cocoa powder.</p>
+                            </div>
+                        </li>
+                        <li class="mb-4 d-flex align-items-center">
+                            <div class="icon-blob bg-secondary-subtle text-secondary rounded-circle me-3" style="width: 50px; height: 50px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-nut-bolt fa-lg"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Roasted Nuts</h6>
+                                <p class="text-muted small mb-0">Slow-roasted almonds and pistachios for the ultimate crunch.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="rounded-5 shadow-lg overflow-hidden position-relative" style="height: 400px;">
+                        <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?q=80&w=800&auto=format&fit=crop"
+                            class="w-100 h-100 object-fit-cover scoop-trigger" alt="Premium Add-ins" style="cursor: pointer;">
+                        <div class="pour-container"></div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="p-4 bg-white rounded-4 shadow-sm h-100">
-                        <i class="fas fa-sugar-cane fa-2x mb-3 text-warning"></i>
-                        <h5>Real Sugar</h5>
-                        <p class="small text-muted">Certified organic cane sugar for that perfect sweetness.</p>
-                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Inclusive -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <h2 class="display-5 font-heading mb-3" style="color: #FF5252;">🌿 Clean & Inclusive Options</h2>
+                    <h4 class="h5 fw-bold text-muted mb-4">Made for Everyone</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Plant-Based Joy</h6>
+                                <p class="text-muted small mb-0">Indulgent vegan options that never compromise on
+                                    creaminess or flavor.</p>
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Friendly Ingredients</h6>
+                                <p class="text-muted small mb-0">A thoughtful selection of dairy-free and gluten-free
+                                    choices for all diets.</p>
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Pure & Honest</h6>
+                                <p class="text-muted small mb-0">No preservatives, artificial colors, or GMOs. Just
+                                    clean, honest ice cream.</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-md-3">
-                    <div class="p-4 bg-white rounded-4 shadow-sm h-100">
-                        <i class="fas fa-seedling fa-2x mb-3 text-success"></i>
-                        <h5>Fair Trade</h5>
-                        <p class="small text-muted">100% Fair Trade certified cocoa and vanilla beans.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="p-4 bg-white rounded-4 shadow-sm h-100">
-                        <i class="fas fa-tint fa-2x mb-3 text-info"></i>
-                        <h5>Hand-Churned</h5>
-                        <p class="small text-muted">A obsession with texture that only small batches provide.</p>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="rounded-5 shadow-lg overflow-hidden" style="height: 400px;">
+                        <img src="img/clean.jpeg" class="w-100 h-100 object-fit-cover" alt="Inclusive Options">
                     </div>
                 </div>
             </div>
@@ -98,7 +199,7 @@
 
     <div id="footer-placeholder"></div>
 
-    <!-- Bootstrap 5 JS -->
+    <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Common Components JS -->
     <script src="js/loader.js"></script>
@@ -107,4 +208,5 @@
     <!-- Custom JS -->
     <script src="js/main.js"></script>
 </body>
+
 </html>

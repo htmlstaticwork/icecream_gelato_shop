@@ -91,4 +91,48 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+
+    // --- NEW POURING ANIMATION LOGIC ---
+    function initPouringAnimation() {
+        const triggers = document.querySelectorAll('.scoop-trigger');
+        
+        triggers.forEach(trigger => {
+            trigger.addEventListener('click', function(e) {
+                // Find or create a pour container relative to the trigger
+                let container = this.parentElement.querySelector('.pour-container');
+                if (!container) {
+                    container = document.createElement('div');
+                    container.className = 'pour-container';
+                    this.parentElement.style.position = 'relative';
+                    this.parentElement.appendChild(container);
+                }
+
+                // Create a drip
+                const drip = document.createElement('div');
+                drip.className = 'drip';
+                
+                // Randomize horizontal position slightly
+                const rect = this.getBoundingClientRect();
+                const containerRect = container.getBoundingClientRect();
+                
+                // Position drip at click or center of scoop
+                const x = e.clientX - containerRect.left;
+                drip.style.left = `${x}px`;
+                drip.style.top = '20px';
+
+                // Randomize drip color based on some favorites or use primary
+                const colors = ['#FF6B6B', '#4ECDC4', '#FFE66D', '#FF8E8E', '#A29BFE'];
+                drip.style.background = colors[Math.floor(Math.random() * colors.length)];
+
+                container.appendChild(drip);
+
+                // Remove drip after animation
+                setTimeout(() => {
+                    drip.remove();
+                }, 2000);
+            });
+        });
+    }
+
+    initPouringAnimation();
 });

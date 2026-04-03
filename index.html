@@ -24,111 +24,209 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 hero-content">
-                    <h1 class="fade-in-up">Handcrafted <span>Ice Cream</span> Made Fresh Daily</h1>
-                    <p class="lead mb-4 fade-in-up">Every scoop is a piece of art, made with premium local ingredients and a dash of magic.</p>
+                    <h1 class="fade-in-up">Handcrafted <span>Ice Cream</span> <br>Made Fresh Daily</h1>
+                    <p class="lead mb-4 fade-in-up">Every scoop is a piece of art, made with premium local ingredients and a dash of magic. Click the scoop to see the magic!</p>
                     <div class="fade-in-up">
-                        <a href="flavors.html" class="btn btn-primary-custom me-3">View Flavors</a>
-                        <a href="contact.html" class="btn btn-secondary-custom">Visit Us</a>
+                        <a href="flavors.html" class="btn btn-primary-custom me-3">View Flavors 👋</a>
+                        <a href="contact.html" class="btn btn-secondary-custom">Visit Us 🍦</a>
                     </div>
                 </div>
                 <div class="col-lg-6 mt-5 mt-lg-0">
-                    <div class="hero-img text-center">
-                        <img src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?q=80&w=1074&auto=format&fit=crop" alt="Delicious Ice Cream Cone" class="img-fluid rounded-pill shadow-lg fade-in-up">
+                    <div class="hero-img text-center position-relative">
+                        <img src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?q=80&w=1074&auto=format&fit=crop" alt="Delicious Ice Cream Cone" class="img-fluid rounded-pill shadow-lg fade-in-up scoop-trigger" style="cursor: pointer;">
+                        <div class="pour-container"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="hero-divider"></div>
+        <div class="hero-divider-pink"></div>
     </section>
 
-    <!-- Today's Featured Flavors -->
+    <!-- 2. Today's Featured Flavors -->
     <section class="section-padding">
-        <div class="container">
-            <div class="section-title">
-                <h2>Today's Featured Flavors</h2>
-                <p>Freshly churned this morning just for you!</p>
+        <div class="container text-center">
+            <div class="section-title mb-5">
+                <h2 class="display-5 font-heading" style="color: #FF5252;">Today's Featured Flavors 🍧</h2>
+                <p class="lead text-muted">Freshly churned this morning just for you!</p>
             </div>
-            <div class="row">
-                <!-- Flavor Card 1 -->
+            <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="ice-cream-card">
-                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Coral Strawberry">
-                        <div class="card-body text-center p-4">
-                            <h4 class="card-title">Coral Strawberry</h4>
+                    <div class="ice-cream-card hover-up">
+                        <div class="ratio ratio-1x1 overflow-hidden rounded-4">
+                            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=800&auto=format&fit=crop" class="card-img-top object-fit-cover scoop-trigger" alt="Coral Strawberry">
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="card-title fw-bold">Coral Strawberry 🍓</h4>
                             <p class="card-text text-muted">Sun-ripened local strawberries blended with rich cream.</p>
-                            <span class="badge rounded-pill bg-danger mb-3">Popular</span>
+                            <span class="badge rounded-pill bg-danger-subtle text-danger px-3 shadow-sm">Popular</span>
                         </div>
                     </div>
                 </div>
-                <!-- Flavor Card 2 -->
                 <div class="col-md-4">
-                    <div class="ice-cream-card">
-                        <img src="https://images.unsplash.com/photo-1549395156-9747d27e1482?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Minty Fresh">
-                        <div class="card-body text-center p-4">
-                            <h4 class="card-title">Minty Fresh</h4>
+                    <div class="ice-cream-card hover-up">
+                        <div class="ratio ratio-1x1 overflow-hidden rounded-4">
+                            <img src="https://images.unsplash.com/photo-1549395156-9747d27e1482?q=80&w=800&auto=format&fit=crop" class="card-img-top object-fit-cover scoop-trigger" alt="Minty Fresh">
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="card-title fw-bold">Minty Fresh 🌿</h4>
                             <p class="card-text text-muted">Organic garden mint with dark chocolate chunks.</p>
-                            <span class="badge rounded-pill bg-info mb-3">Fresh</span>
+                            <span class="badge rounded-pill bg-info-subtle text-info px-3 shadow-sm">Fresh</span>
                         </div>
                     </div>
                 </div>
-                <!-- Flavor Card 3 -->
                 <div class="col-md-4">
-                    <div class="ice-cream-card">
-                        <img src="https://images.unsplash.com/photo-1516559173920-171049339a7a?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Sun-Kissed Mango">
-                        <div class="card-body text-center p-4">
-                            <h4 class="card-title">Sun-Kissed Mango</h4>
+                    <div class="ice-cream-card hover-up">
+                        <div class="ratio ratio-1x1 overflow-hidden rounded-4">
+                            <img src="https://images.unsplash.com/photo-1516559173920-171049339a7a?q=80&w=800&auto=format&fit=crop" class="card-img-top object-fit-cover scoop-trigger" alt="Sun-Kissed Mango">
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="card-title fw-bold">Sun-Kissed Mango 🥭</h4>
                             <p class="card-text text-muted">Pure Alphonso mango pulp for a tropical burst.</p>
-                            <span class="badge rounded-pill bg-warning mb-3">Seasonal</span>
+                            <span class="badge rounded-pill bg-warning-subtle text-warning px-3 shadow-sm">Seasonal</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-4">
-                <a href="flavors.html" class="btn btn-accent-custom">See All Flavors</a>
+            <div class="text-center mt-5">
+                <a href="flavors.html" class="btn btn-primary-custom px-5">Explore All 100+ Flavors ✨</a>
             </div>
         </div>
     </section>
 
-    <!-- Why Choose Us -->
-    <section class="section-padding" style="background-color: #f7fffe;">
+    <!-- 3. The Secret Sauce (Ingredients Teaser) -->
+    <section class="section-padding bg-light">
         <div class="container">
-            <div class="section-title">
-                <h2>Why Scoops & Smiles?</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1505394033323-4241b211356e?q=80&w=1000&auto=format&fit=crop" class="img-fluid rounded-5 shadow-lg" alt="Quality Ingredients">
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h2 class="display-5 font-heading mb-4" style="color: #FF5252;">Nature's Sweetest Secrets 🍯</h2>
+                    <p class="lead mb-4">We believe that great ice cream starts with zero compromises. That's why we source every single ingredient with intention.</p>
+                    <ul class="list-unstyled mb-5">
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fas fa-check-circle text-primary me-3 fa-lg"></i>
+                            <span>100% Farm-Fresh Dairy from Local Pastures</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fas fa-check-circle text-primary me-3 fa-lg"></i>
+                            <span>Sun-Ripened Fruits Picked at Peak Freshness</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fas fa-check-circle text-primary me-3 fa-lg"></i>
+                            <span>Hand-Roasted Nuts & Premium Belgian Chocolate</span>
+                        </li>
+                    </ul>
+                    <a href="ingredients.html" class="btn btn-outline-primary-custom px-5">Our Ingredient Story 🥛</a>
+                </div>
             </div>
-            <div class="row g-4 text-center">
+        </div>
+    </section>
+
+    <!-- 4. Why Scoops & Smiles? (Values) -->
+    <section class="section-padding">
+        <div class="container text-center">
+            <div class="section-title mb-5">
+                <h2 class="display-5 font-heading" style="color: #FF5252;">Why We're Different 🌈</h2>
+            </div>
+            <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="p-4">
-                        <i class="fas fa-leaf fa-3x mb-3 text-success"></i>
-                        <h4>Fresh Ingredients</h4>
-                        <p class="text-muted">We source everything from local farmers to ensure the highest quality and freshness.</p>
+                    <div class="p-4 bg-white rounded-5 shadow-sm hover-up h-100">
+                        <div class="icon-blob mb-4 mx-auto" style="background: #fff1f1; width: 100px; height: 100px; border-radius: 40% 60% 70% 30% / 40% 50% 60% 70%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-heart fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold">Made with Love</h4>
+                        <p class="text-muted">Every batch is hand-churned by our passionate team of flavor enthusiasts.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="p-4">
-                        <i class="fas fa-blender fa-3x mb-3 text-primary"></i>
-                        <h4>Small Batch</h4>
-                        <p class="text-muted">Each flavor is churned in small quantities for perfect texture and taste consistency.</p>
+                    <div class="p-4 bg-white rounded-5 shadow-sm hover-up h-100">
+                        <div class="icon-blob mb-4 mx-auto" style="background: #e6f9ff; width: 100px; height: 100px; border-radius: 60% 40% 30% 70% / 50% 60% 70% 40%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-magic fa-3x text-info"></i>
+                        </div>
+                        <h4 class="fw-bold">Pure Magic</h4>
+                        <p class="text-muted">No artificial colors or preservatives. Just pure, honest happiness in a scoop.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="p-4">
-                        <i class="fas fa-magic fa-3x mb-3 text-warning"></i>
-                        <h4>Unique Flavors</h4>
-                        <p class="text-muted">From classics to adventurous combinations, we love to experiment with taste.</p>
+                    <div class="p-4 bg-white rounded-5 shadow-sm hover-up h-100">
+                        <div class="icon-blob mb-4 mx-auto" style="background: #fff9e6; width: 100px; height: 100px; border-radius: 40% 50% 60% 70% / 60% 40% 30% 70%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-users fa-3x text-warning"></i>
+                        </div>
+                        <h4 class="fw-bold">Our Community</h4>
+                        <p class="text-muted">We're more than a shop; we're a hub for sweet memories and happy gatherings.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Banner -->
-    <section class="section-padding text-center bg-primary text-white" style="background: linear-gradient(rgba(255, 107, 107, 0.9), rgba(255, 107, 107, 0.9)), url('https://images.unsplash.com/photo-1549395156-9747d27e1482?q=80&w=1200&auto=format&fit=crop'); background-size: cover; background-position: center;">
-        <div class="container py-5">
-            <h2 class="display-4 fw-bold mb-4 font-heading">Come Taste Happiness!</h2>
-            <p class="lead mb-5">Visit our store today and find your new favorite flavor.</p>
-            <div class="d-flex justify-content-center gap-3">
-                <a href="contact.html" class="btn btn-light btn-lg rounded-pill px-5 text-primary fw-bold">Find Us</a>
-                <a href="catering.html" class="btn btn-outline-light btn-lg rounded-pill px-5">Book Event</a>
+    <!-- 5. Meet the Makers (About Teaser) -->
+    <section class="section-padding bg-light" style="border-radius: 150px 0 150px 0;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-5 mb-lg-0">
+                    <img src="img/about-home.jpg" class="img-fluid rounded-5 shadow-lg" alt="Our Story" onerror="this.src='https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1000&auto=format&fit=crop'">
+                </div>
+                <div class="col-lg-6 order-lg-1 pe-lg-5">
+                    <h2 class="display-5 font-heading mb-4" style="color: #FF5252;">A Family Tradition of Sweetness 🍨</h2>
+                    <p class="lead mb-4">Born from a tiny kitchen and a big dream, Scoops & Smiles has been bringing the community together one cone at a time since 2010.</p>
+                    <p class="text-muted mb-5">Our founder, Sarah Jenkins, started with just three flavors. Today, we churn over 100 unique varieties, but the love and care in every batch remain exactly the same.</p>
+                    <a href="our-story.html" class="btn btn-secondary-custom px-5">The Full Story 📖</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Sweet Moments (Gallery Preview) -->
+    <section class="section-padding">
+        <div class="container text-center">
+            <div class="section-title mb-5">
+                <h2 class="display-5 font-heading" style="color: #FF5252;">Sweet Moments 📸</h2>
+                <p class="lead text-muted">Join the fun and share your smiles with us!</p>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-4 col-6">
+                    <div class="ratio ratio-1x1 rounded-4 overflow-hidden shadow-sm hover-up gallery-preview">
+                        <img src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?q=80&w=600&auto=format&fit=crop" class="img-fluid object-fit-cover" alt="Happy Moments">
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="ratio ratio-1x1 rounded-4 overflow-hidden shadow-sm hover-up gallery-preview">
+                        <img src="https://images.unsplash.com/photo-1549395156-9747d27e1482?q=80&w=600&auto=format&fit=crop" class="img-fluid object-fit-cover" alt="Ice Cream Variety">
+                    </div>
+                </div>
+                <div class="col-md-4 d-none d-md-block">
+                    <div class="ratio ratio-1x1 rounded-4 overflow-hidden shadow-sm hover-up gallery-preview">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=600&auto=format&fit=crop" class="img-fluid object-fit-cover" alt="Store Front">
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5">
+                <a href="gallery.html" class="btn btn-outline-primary-custom px-5">View Full Gallery 🍦</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Scoop Club (Newsletter & Socials) -->
+    <section class="section-padding bg-primary text-white" style="background: linear-gradient(135deg, #FF6B6B 0%, #FF8E8E 100%);">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <h2 class="display-4 font-heading mb-3">Join the Scoop Club! 🍦</h2>
+                    <p class="lead mb-0">Get exclusive flavor alerts, sweet deals, and community event invites delivered to your inbox.</p>
+                </div>
+                <div class="col-lg-6">
+                    <form class="bg-white p-4 rounded-5 shadow-lg d-flex gap-2">
+                        <input type="email" class="form-control rounded-pill border-0 px-4" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn btn-accent-custom px-4 rounded-pill">Sign Up 🚀</button>
+                    </form>
+                    <div class="mt-4 d-flex gap-4 justify-content-center justify-content-lg-start">
+                        <a href="#" class="text-white fs-4 hover-up"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white fs-4 hover-up"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white fs-4 hover-up"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

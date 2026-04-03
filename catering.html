@@ -41,11 +41,12 @@
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3">
                     <div
-                        class="experience-card p-0 text-center h-100 rounded-5 shadow-sm border border-opacity-10 transition-all hover-translate-y bg-white overflow-hidden">
-                        <div class="experience-img-wrapper" style="height: 200px; overflow: hidden;">
+                        class="experience-card p-0 text-center h-100 rounded-5 shadow-sm border border-opacity-10 transition-all hover-translate-y bg-white overflow-hidden position-relative">
+                        <div class="experience-img-wrapper scoop-trigger" style="height: 200px; overflow: hidden; cursor: pointer;">
                             <img src="https://images.unsplash.com/photo-1505394033641-40c6ad1178d7?q=80&w=800&auto=format&fit=crop"
                                 class="w-100 h-100 object-fit-cover" alt="Gelato Bar">
                         </div>
+                        <div class="pour-container"></div>
                         <div class="p-4">
                             <h4 class="font-heading mb-3" style="color: #FF5252;">Gelato Bar</h4>
                             <p class="text-muted small">Elegant setup with multiple flavors & toppings, perfect for
@@ -55,11 +56,12 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div
-                        class="experience-card p-0 text-center h-100 rounded-5 shadow-sm border border-opacity-10 transition-all hover-translate-y bg-white overflow-hidden">
-                        <div class="experience-img-wrapper" style="height: 200px; overflow: hidden;">
+                        class="experience-card p-0 text-center h-100 rounded-5 shadow-sm border border-opacity-10 transition-all hover-translate-y bg-white overflow-hidden position-relative">
+                        <div class="experience-img-wrapper scoop-trigger" style="height: 200px; overflow: hidden; cursor: pointer;">
                             <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?q=80&w=800&auto=format&fit=crop"
                                 class="w-100 h-100 object-fit-cover" alt="Ice Cream Cart">
                         </div>
+                        <div class="pour-container"></div>
                         <div class="p-4">
                             <h4 class="font-heading mb-3" style="color: #FF5252;">Ice Cream Cart</h4>
                             <p class="text-muted small">Compact, stylish serving station for small to mid-sized events
@@ -69,11 +71,12 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div
-                        class="experience-card p-0 text-center h-100 rounded-5 shadow-sm border border-opacity-10 transition-all hover-translate-y bg-white overflow-hidden">
-                        <div class="experience-img-wrapper" style="height: 200px; overflow: hidden;">
+                        class="experience-card p-0 text-center h-100 rounded-5 shadow-sm border border-opacity-10 transition-all hover-translate-y bg-white overflow-hidden position-relative">
+                        <div class="experience-img-wrapper scoop-trigger" style="height: 200px; overflow: hidden; cursor: pointer;">
                             <img src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?q=80&w=800&auto=format&fit=crop"
                                 class="w-100 h-100 object-fit-cover" alt="Ice Cream Truck">
                         </div>
+                        <div class="pour-container"></div>
                         <div class="p-4">
                             <h4 class="font-heading mb-3" style="color: #FF5252;">Ice Cream Truck</h4>
                             <p class="text-muted small">Fun, nostalgic experience for large gatherings, corporate
@@ -83,11 +86,12 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div
-                        class="experience-card p-0 text-center h-100 rounded-5 shadow-sm border border-opacity-10 transition-all hover-translate-y bg-white overflow-hidden">
-                        <div class="experience-img-wrapper" style="height: 200px; overflow: hidden;">
+                        class="experience-card p-0 text-center h-100 rounded-5 shadow-sm border border-opacity-10 transition-all hover-translate-y bg-white overflow-hidden position-relative">
+                        <div class="experience-img-wrapper scoop-trigger" style="height: 200px; overflow: hidden; cursor: pointer;">
                             <img src="https://www.icecreamphotographer.com/images/bagallery/gallery-4/thumbnail/category-1/Fancy%20Sundae_Website%20(1).jpg?1718632329"
                                 class="w-100 h-100 object-fit-cover" alt="Sundae Station">
                         </div>
+                        <div class="pour-container"></div>
                         <div class="p-4">
                             <h4 class="font-heading mb-3" style="color: #FF5252;">Sundae Station</h4>
                             <p class="text-muted small">Interactive DIY toppings bar for guests to create their own
@@ -110,55 +114,43 @@
 
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3">
-                    <div
-                        class="text-center p-0 rounded-5 shadow-sm overflow-hidden bg-white h-100 border border-opacity-10 transition-all hover-translate-y">
-                        <div style="height: 150px; overflow: hidden;">
-                            <img src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?q=80&w=400&auto=format&fit=crop"
-                                class="w-100 h-100 object-fit-cover" alt="Quality">
+                    <div class="text-center p-5 rounded-5 shadow-sm bg-white h-100 hover-up transition-all border-0">
+                        <div class="icon-blob bg-primary-subtle text-primary mx-auto mb-4 d-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px;">
+                            <i class="fas fa-magic fa-2x icon-bounce"></i>
                         </div>
-                        <div class="p-4">
-                            <h5 class="fw-bold mb-2" style="color: #FF5252;">Handcrafted Quality</h5>
-                            <p class="text-muted small mb-0">Small-batch ice cream made with premium ingredients</p>
-                        </div>
+                        <h5 class="fw-bold mb-3">Handcrafted Magic</h5>
+                        <p class="text-muted small mb-0">Small-batch ice cream made with premium, local ingredients.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div
-                        class="text-center p-0 rounded-5 shadow-sm overflow-hidden bg-white h-100 border border-opacity-10 transition-all hover-translate-y">
-                        <div style="height: 150px; overflow: hidden;">
-                            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=400&auto=format&fit=crop"
-                                class="w-100 h-100 object-fit-cover" alt="Service">
+                    <div class="text-center p-5 rounded-5 shadow-sm bg-white h-100 hover-up transition-all border-0">
+                        <div class="icon-blob bg-info-subtle text-info mx-auto mb-4 d-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px;">
+                            <i class="fas fa-user-tie fa-2x icon-bounce"></i>
                         </div>
-                        <div class="p-4">
-                            <h5 class="fw-bold mb-2" style="color: #FF5252;">Professional Service</h5>
-                            <p class="text-muted small mb-0">Friendly staff handling setup, serving & cleanup</p>
-                        </div>
+                        <h5 class="fw-bold mb-3">Pro Service</h5>
+                        <p class="text-muted small mb-0">Friendly staff handling everything from setup to cleanup.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div
-                        class="text-center p-0 rounded-5 shadow-sm overflow-hidden bg-white h-100 border border-opacity-10 transition-all hover-translate-y">
-                        <div style="height: 150px; overflow: hidden;">
-                            <img src="https://mashupicecream.com/cdn/shop/articles/owl.eyes_A_wide_shot_of_a_hispanic_woman_and_her_daughter_enjoy_3b185dc1-7d0e-40c1-af78-42cecc859e5b.png?v=1719302714&width=533"
-                                class="w-100 h-100 object-fit-cover" alt="Experience">
+                    <div class="text-center p-5 rounded-5 shadow-sm bg-white h-100 hover-up transition-all border-0">
+                        <div class="icon-blob bg-danger-subtle text-danger mx-auto mb-4 d-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px;">
+                            <i class="fas fa-camera-retro fa-2x icon-bounce"></i>
                         </div>
-                        <div class="p-4">
-                            <h5 class="fw-bold mb-2" style="color: #FF5252;">Memorable Experience</h5>
-                            <p class="text-muted small mb-0">Live scooping and interactive serving for guests</p>
-                        </div>
+                        <h5 class="fw-bold mb-3">Picture Perfect</h5>
+                        <p class="text-muted small mb-0">Insta-worthy setups that your guests will absolutely love.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div
-                        class="text-center p-0 rounded-5 shadow-sm overflow-hidden bg-white h-100 border border-opacity-10 transition-all hover-translate-y">
-                        <div style="height: 150px; overflow: hidden;">
-                            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=400&auto=format&fit=crop"
-                                class="w-100 h-100 object-fit-cover" alt="Inclusive">
+                    <div class="text-center p-5 rounded-5 shadow-sm bg-white h-100 hover-up transition-all border-0">
+                        <div class="icon-blob bg-success-subtle text-success mx-auto mb-4 d-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px;">
+                            <i class="fas fa-check-double fa-2x icon-bounce"></i>
                         </div>
-                        <div class="p-4">
-                            <h5 class="fw-bold mb-2" style="color: #FF5252;">Inclusive Options</h5>
-                            <p class="text-muted small mb-0">Vegan, dairy-free, and allergy-friendly choices</p>
-                        </div>
+                        <h5 class="fw-bold mb-3">Truly Inclusive</h5>
+                        <p class="text-muted small mb-0">Vegan, dairy-free, and allergy-friendly choices for all.</p>
                     </div>
                 </div>
             </div>

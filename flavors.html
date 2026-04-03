@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,25 +13,43 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div id="header-placeholder"></div>
 
-    <!-- Navbar (Same as index) -->
+    <!-- Flavors Hero -->
+    <section class="hero-section text-center text-white"
+        style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1501443762994-82bd5dace89a?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;">
+        <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
+            <h1 class="display-3 fw-bold mb-4 font-heading fade-in-up">Flavor <span class="text-primary-custom"
+                    style="color: var(--primary-color) !important;">Paradise</span></h1>
+            <p class="lead mb-0 fade-in-up">Every scoop is a journey into artisanal sweetness and pure joy.</p>
+        </div>
+        <div class="hero-divider hero-divider-pink"></div>
+    </section>
 
-    <!-- Page Header -->
+    <!-- Page Header & Filters -->
     <section class="section-padding bg-light pb-0">
-        <div class="container">
-            <div class="section-title">
-                <h1>Explore Our <span class="text-primary">Delicious Flavors</span></h1>
-                <p class="lead">From timeless classics to seasonal adventures, we have something for everyone.</p>
+        <div class="container text-center">
+            <div class="section-title mb-4">
+                <h2 class="display-5 font-heading" style="color: #FF5252;">👉 Explore Our Handcrafted Flavors</h2>
+                <p class="lead fw-bold mb-2">Made fresh daily with natural ingredients</p>
             </div>
-            
+
             <!-- Filter Tabs -->
             <div class="d-flex justify-content-center flex-wrap gap-2 mb-5">
-                <button class="btn btn-outline-primary filter-btn active px-4 rounded-pill" data-filter="all">All Flavors</button>
-                <button class="btn btn-outline-primary filter-btn px-4 rounded-pill" data-filter="seasonal">Seasonal Specials</button>
-                <button class="btn btn-outline-primary filter-btn px-4 rounded-pill" data-filter="vegan">Vegan Options</button>
-                <button class="btn btn-outline-primary filter-btn px-4 rounded-pill" data-filter="classics">Classic Favorites</button>
+                <button class="btn btn-outline-primary filter-btn active px-4 rounded-pill" data-filter="all">
+                    <i class="fas fa-border-all me-1"></i> All Flavors
+                </button>
+                <button class="btn btn-outline-primary filter-btn px-4 rounded-pill" data-filter="seasonal">
+                    <i class="fas fa-snowflake me-1"></i> Seasonal Specials
+                </button>
+                <button class="btn btn-outline-primary filter-btn px-4 rounded-pill" data-filter="vegan">
+                    <i class="fas fa-leaf me-1"></i> Vegan Options
+                </button>
+                <button class="btn btn-outline-primary filter-btn px-4 rounded-pill" data-filter="classics">
+                    <i class="fas fa-star me-1"></i> Classic Favorites
+                </button>
             </div>
         </div>
     </section>
@@ -41,76 +60,155 @@
             <div class="row g-4" id="flavor-grid">
                 <!-- Classic Vanilla -->
                 <div class="col-md-4 flavor-card" data-category="classics">
-                    <div class="ice-cream-card">
-                        <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?q=80&w=800&auto=format&fit=crop" alt="Classic Vanilla">
+                    <div class="ice-cream-card position-relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?q=80&w=800&auto=format&fit=crop"
+                            alt="Classic Vanilla" class="scoop-trigger" style="cursor: pointer;">
+                        <div class="pour-container"></div>
                         <div class="card-body p-4">
                             <h4 class="card-title">Classic Vanilla</h4>
                             <p class="text-muted">Real Madagascar vanilla beans. Simple, elegant, and timeless.</p>
-                            <span class="badge rounded-pill bg-secondary text-dark">Popular</span>
-                            <div class="mt-3">
-                                <a href="contact.html" class="btn btn-sm btn-outline-primary rounded-pill">Find Store</a>
-                            </div>
+                            <span class="badge rounded-pill bg-primary-subtle text-primary border-0 px-3 py-2"><i class="fas fa-heart me-1"></i> Popular</span>
+                            <span class="badge rounded-pill bg-secondary-subtle text-secondary border-0 px-3 py-2"><i class="fas fa-award me-1"></i> Classic</span>
                         </div>
                     </div>
                 </div>
                 <!-- Belgian Chocolate -->
                 <div class="col-md-4 flavor-card" data-category="classics">
-                    <div class="ice-cream-card">
-                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=800&auto=format&fit=crop" alt="Belgian Chocolate">
+                    <div class="ice-cream-card position-relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=800&auto=format&fit=crop"
+                            alt="Belgian Chocolate" class="scoop-trigger" style="cursor: pointer;">
+                        <div class="pour-container"></div>
                         <div class="card-body p-4">
                             <h4 class="card-title">Belgian Chocolate</h4>
                             <p class="text-muted">70% dark chocolate churned to smooth perfection. A chocoholic's dream.</p>
-                            <span class="badge rounded-pill bg-danger">Classics</span>
+                            <span class="badge rounded-pill bg-secondary-subtle text-secondary border-0 px-3 py-2"><i class="fas fa-award me-1"></i> Classic</span>
                         </div>
                     </div>
                 </div>
                 <!-- Coral Strawberry -->
                 <div class="col-md-4 flavor-card" data-category="seasonal">
-                    <div class="ice-cream-card">
-                        <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?q=80&w=800&auto=format&fit=crop" alt="Coral Strawberry">
+                    <div class="ice-cream-card position-relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?q=80&w=800&auto=format&fit=crop"
+                            alt="Coral Strawberry" class="scoop-trigger" style="cursor: pointer;">
+                        <div class="pour-container"></div>
                         <div class="card-body p-4">
                             <h4 class="card-title">Coral Strawberry</h4>
                             <p class="text-muted">Sun-ripened local strawberries blended with rich sweet cream.</p>
-                            <span class="badge rounded-pill bg-info">New Arrivals</span>
+                            <span class="badge rounded-pill bg-danger-subtle text-danger border-0 px-3 py-2"><i class="fas fa-sparkles me-1"></i> New</span>
+                            <span class="badge rounded-pill bg-info-subtle text-info border-0 px-3 py-2"><i class="fas fa-calendar-star me-1"></i> Seasonal</span>
                         </div>
                     </div>
                 </div>
                 <!-- Vegan Coconut Mint -->
                 <div class="col-md-4 flavor-card" data-category="vegan">
-                    <div class="ice-cream-card">
-                        <img src="https://images.unsplash.com/photo-1505394033323-4241b211356e?q=80&w=800&auto=format&fit=crop" alt="Coconut Mint">
+                    <div class="ice-cream-card position-relative overflow-hidden">
+                        <img src="https://www.seriouseats.com/thmb/iKd9dXxYplkjdZf4N2MJ6Sf-ix4%3D/1500x0/filters%3Ano_upscale%28%29%3Amax_bytes%28150000%29%3Astrip_icc%28%29/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2015__02__20150223-vegan-ice-cream-vicky-wasik-1-edfec55ab30f4271ba135000d0f4d3f8.jpg"
+                            alt="Coconut Mint" class="scoop-trigger" style="cursor: pointer;">
+                        <div class="pour-container"></div>
                         <div class="card-body p-4">
                             <h4 class="card-title">Vegan Coconut Mint</h4>
                             <p class="text-muted">Creamy coconut milk with fresh organic mint and cacao nibs.</p>
-                            <span class="badge rounded-pill bg-success">Vegan</span>
+                            <span class="badge rounded-pill bg-success-subtle text-success border-0 px-3 py-2"><i class="fas fa-leaf me-1"></i> Vegan</span>
                         </div>
                     </div>
                 </div>
                 <!-- Salted Caramel -->
                 <div class="col-md-4 flavor-card" data-category="classics">
-                    <div class="ice-cream-card">
-                        <img src="https://images.unsplash.com/photo-1560008511-11c63416e52d?q=80&w=800&auto=format&fit=crop" alt="Salted Caramel">
+                    <div class="ice-cream-card position-relative overflow-hidden">
+                        <img src="https://www.thespruceeats.com/thmb/jZmYRDpWby4VM4r2w5Cah1Vth_U%3D/1500x0/filters%3Ano_upscale%28%29%3Amax_bytes%28150000%29%3Astrip_icc%28%29/SaltedCaramelIceCreamHERO-9e49945bc9fb4afca856e37f5b1bbbe5.jpg"
+                            alt="Salted Caramel" class="scoop-trigger" style="cursor: pointer;">
+                        <div class="pour-container"></div>
                         <div class="card-body p-4">
                             <h4 class="card-title">Salted Caramel</h4>
                             <p class="text-muted">House-made caramel with a touch of Mediterranean sea salt.</p>
-                            <span class="badge rounded-pill bg-secondary text-dark">Bestseller</span>
+                            <span class="badge rounded-pill bg-primary-subtle text-primary border-0 px-3 py-2"><i class="fas fa-heart me-1"></i> Popular</span>
                         </div>
                     </div>
                 </div>
                 <!-- Mango Sorbet -->
                 <div class="col-md-4 flavor-card" data-category="vegan">
-                    <div class="ice-cream-card">
-                        <img src="https://images.unsplash.com/photo-1549395156-9747d27e1482?q=80&w=800&auto=format&fit=crop" alt="Mango Sorbet">
+                    <div class="ice-cream-card position-relative overflow-hidden">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/mango-sorbet-3252-669e6bff5de91.jpg?crop=0.502xw%3A1.00xh%3B0.444xw%2C0&resize=1200%3A%2A"
+                            alt="Mango Sorbet" class="scoop-trigger" style="cursor: pointer;">
+                        <div class="pour-container"></div>
                         <div class="card-body p-4">
                             <h4 class="card-title">Sun-Kissed Mango</h4>
                             <p class="text-muted">Dairy-free, fat-free, and full of tropical sunshine goodness.</p>
-                            <span class="badge rounded-pill bg-success">Vegan</span>
-                            <span class="badge rounded-pill bg-warning text-dark">Seasonal</span>
+                            <span class="badge rounded-pill bg-success-subtle text-success border-0 px-3 py-2"><i class="fas fa-leaf me-1"></i> Vegan</span>
+                            <span class="badge rounded-pill bg-warning-subtle text-warning border-0 px-3 py-2"><i class="fas fa-sun me-1"></i> Seasonal</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Section: Customer Favorites -->
+    <section class="section-padding bg-light">
+        <div class="container text-center">
+            <h2 class="display-5 font-heading mb-5" style="color: #FF5252;">👉 Customer Favorites</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="ice-cream-card border-0 shadow-sm position-relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1579954115545-a95591f28be0?q=80&w=800&auto=format&fit=crop"
+                            class="card-img-top scoop-trigger" alt="Most Popular" style="cursor: pointer;">
+                        <div class="pour-container"></div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Most Popular</h5>
+                            <p class="text-muted small">Our legendary Salted Caramel that started it all.</p>
+                            <span class="badge rounded-pill bg-primary border-0 px-3 py-2">⭐ Best Seller</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="ice-cream-card border-0 shadow-sm position-relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1505394033323-4241b211356e?q=80&w=800&auto=format&fit=crop"
+                            class="card-img-top scoop-trigger" alt="Chef's Special" style="cursor: pointer;">
+                        <div class="pour-container"></div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Chef’s Special</h5>
+                            <p class="text-muted small">Honey Lavender infusion using local wildflower honey.</p>
+                            <span class="badge rounded-pill bg-danger border-0 px-3 py-2">🔥 Trending</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="ice-cream-card border-0 shadow-sm position-relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1549395156-9747d27e1482?q=80&w=800&auto=format&fit=crop"
+                            class="card-img-top scoop-trigger" alt="Seasonal Hit" style="cursor: pointer;">
+                        <div class="pour-container"></div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Seasonal Hit</h5>
+                            <p class="text-muted small">Summer Berry Swirl with farm-fresh organic berries.</p>
+                            <span class="badge rounded-pill bg-info border-0 px-3 py-2">🌈 Limited Edition</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Ingredients CTA -->
+    <section class="section-padding text-white text-center"
+        style="background: linear-gradient(rgba(255, 107, 107, 0.9), rgba(255, 107, 107, 0.9)), url('https://images.unsplash.com/photo-1505394033323-424ebb29f2e7?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;">
+        <div class="container">
+            <h2 class="display-5 font-heading mb-4">👉 Made with Real Ingredients</h2>
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-8">
+                    <div class="d-flex flex-wrap justify-content-center gap-4 lead">
+                        <span class="d-flex align-items-center"><i class="fas fa-check-circle me-2"></i> Fresh milk & cream</span>
+                        <span class="d-flex align-items-center"><i class="fas fa-check-circle me-2"></i> Real fruits</span>
+                        <span class="d-flex align-items-center"><i class="fas fa-check-circle me-2"></i> No artificial flavors</span>
+                    </div>
+                </div>
+            </div>
+            <a href="ingredients.html" class="btn btn-lg btn-light text-primary fw-bold px-5 rounded-pill shadow icon-bounce">
+                <i class="fas fa-eye me-2"></i> Explore Ingredients
+            </a>
+        </div>
+    </section>
+    </div>
+    </div>
     </section>
 
     <!-- Footer (Same as index) -->
@@ -125,4 +223,5 @@
     <!-- Custom JS -->
     <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -3,26 +3,39 @@ document.addEventListener('DOMContentLoaded', function() {
     if (headerPlaceholder) {
         const currentPath = window.location.pathname.split('/').pop() || 'index.html';
         
+        const isMobile = window.innerWidth <= 1024;
+        
+        const homeMenu = isMobile ? `
+            <li class="nav-item">
+                <a class="nav-link ${currentPath === 'index.html' || currentPath === '' ? 'active' : ''}" href="index.html">Home 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link ${currentPath === 'home2.html' ? 'active' : ''}" href="home2.html">Home 2</a>
+            </li>
+        ` : `
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle ${currentPath === 'index.html' || currentPath === '' || currentPath === 'home2.html' ? 'active' : ''}" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Home
+                </a>
+                <ul class="dropdown-menu border-0 shadow-sm rounded-4" aria-labelledby="homeDropdown">
+                    <li><a class="dropdown-item ${currentPath === 'index.html' || currentPath === '' ? 'active' : ''}" href="index.html">Home 1</a></li>
+                    <li><a class="dropdown-item ${currentPath === 'home2.html' ? 'active' : ''}" href="home2.html">Home 2</a></li>
+                </ul>
+            </li>
+        `;
+
         headerPlaceholder.innerHTML = `
             <nav class="navbar navbar-expand-lg sticky-top">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
                         <i class="fas fa-ice-cream me-2"></i>Scoops & Smiles
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                        <span class="navbar-toggler-icon"></span>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <i class="fas fa-bars"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto align-items-center">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle ${currentPath === 'index.html' || currentPath === '' || currentPath === 'home2.html' ? 'active' : ''}" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Home
-                                </a>
-                                <ul class="dropdown-menu border-0 shadow-sm rounded-4" aria-labelledby="homeDropdown">
-                                    <li><a class="dropdown-item ${currentPath === 'index.html' || currentPath === '' ? 'active' : ''}" href="index.html">Home 1</a></li>
-                                    <li><a class="dropdown-item ${currentPath === 'home2.html' ? 'active' : ''}" href="home2.html">Home 2</a></li>
-                                </ul>
-                            </li>
+                            ${homeMenu}
                             <li class="nav-item">
                                 <a class="nav-link ${currentPath === 'our-story.html' ? 'active' : ''}" href="our-story.html">About</a>
                             </li>
