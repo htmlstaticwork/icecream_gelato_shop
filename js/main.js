@@ -135,4 +135,40 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     initPouringAnimation();
+
+    // --- NAVBAR SCROLL EFFECT ---
+    const navbar = document.querySelector('.navbar');
+    if (navbar) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+    }
+
+    // --- HOME 1 HERO DROP SCOOP INTERACTION ---
+    const dropScoopBtn = document.getElementById('dropScoopBtn');
+    const animatedScoop = document.getElementById('animatedScoop');
+    
+    if (dropScoopBtn && animatedScoop) {
+        dropScoopBtn.addEventListener('click', function() {
+            // Remove the class if it exists to allow re-triggering
+            animatedScoop.classList.remove('dropped-scoop');
+            // Small timeout to allow the browser to register the removal
+            setTimeout(() => {
+                // Change scoop image randomly for fun
+                const scoops = [
+                    'https://png.pngtree.com/png-clipart/20230321/ourlarge/pngtree-a-scoop-of-strawberry-ice-cream-png-image_6656799.png', // Strawberry
+                    'https://png.pngtree.com/png-vector/20231102/ourmid/pngtree-matcha-ice-cream-scoop-png-image_10330966.png', // Matcha
+                    'https://png.pngtree.com/png-vector/20231201/ourmid/pngtree-a-scoop-of-chocolate-ice-cream-on-a-transparent-png-image_10793616.png' // Chocolate
+                ];
+                animatedScoop.src = scoops[Math.floor(Math.random() * scoops.length)];
+                
+                // Trigger the animation
+                animatedScoop.classList.add('dropped-scoop');
+            }, 50);
+        });
+    }
 });

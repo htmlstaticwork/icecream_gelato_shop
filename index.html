@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scoops & Smiles | Handcrafted Ice Cream Shop</title>
-    <meta name="description" content="Handcrafted, fresh ice cream made daily with love. Discover our seasonal flavors and book us for your next event!">
-    
+    <meta name="description"
+        content="Handcrafted, fresh ice cream made daily with love. Discover our seasonal flavors and book us for your next event!">
+
     <link rel="icon" type="image/png" href="favicon.png">
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -14,81 +16,94 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div id="header-placeholder"></div>
 
     <!-- Navbar -->
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container">
+    <!-- Hero Slider Section -->
+    <!-- Interactive Drop Animation Hero Section -->
+    <section class="hero-section position-relative overflow-hidden" style="background: linear-gradient(135deg, #fff0f3 0%, #ffffff 100%); min-height: 85vh; display: flex; align-items: center;">
+        <div class="container position-relative z-1 py-5 mt-5">
             <div class="row align-items-center">
-                <div class="col-lg-6 hero-content">
-                    <h1 class="fade-in-up">Handcrafted <span>Ice Cream</span> <br>Made Fresh Daily</h1>
-                    <p class="lead mb-4 fade-in-up">Every scoop is a piece of art, made with premium local ingredients and a dash of magic. Click the scoop to see the magic!</p>
-                    <div class="fade-in-up">
-                        <a href="flavors.html" class="btn btn-primary-custom me-3">View Flavors 👋</a>
-                        <a href="contact.html" class="btn btn-secondary-custom">Visit Us 🍦</a>
+                <div class="col-lg-6 hero-content text-lg-start text-center mb-5 mb-lg-0 pe-lg-5">
+                    <span class="badge bg-primary text-white mb-3 px-3 py-2 rounded-pill fw-bold shadow-sm" style="letter-spacing: 1px;">INTERACTIVE EXPERIENCE</span>
+                    <h1 class="display-3 fw-bold font-heading mb-4 text-dark">Build Your <br><span class="text-primary position-relative d-inline-block">Perfect Scoop
+                        <svg class="position-absolute w-100 h-100 start-0 top-0 text-secondary" style="z-index: -1; transform: scale(1.1) translateY(10%); opacity: 0.2" viewBox="0 0 200 60"><path fill="currentColor" d="M0,40 Q100,0 200,40 Q100,80 0,40 Z"></path></svg>
+                    </span></h1>
+                    <p class="lead mb-5 text-muted fw-normal" style="max-width: 500px;">Crafting joy, one scoop at a time. Drop a fresh scoop into the cone and watch the magic happen!</p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                        <button id="dropScoopBtn" class="btn btn-primary-custom btn-lg px-4 pulse-animation shadow-lg fs-5"><i class="fas fa-hand-pointer me-2"></i>Drop a Scoop!</button>
+                        <a href="flavors.html" class="btn btn-outline-dark btn-lg rounded-pill px-4 bg-white shadow-sm fs-5">Explore Menu</a>
                     </div>
                 </div>
-                <div class="col-lg-6 mt-5 mt-lg-0">
-                    <div class="hero-img text-center position-relative">
-                        <img src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?q=80&w=1074&auto=format&fit=crop" alt="Delicious Ice Cream Cone" class="img-fluid rounded-pill shadow-lg fade-in-up scoop-trigger" style="cursor: pointer;">
-                        <div class="pour-container"></div>
+                <!-- Animation Stage -->
+                <div class="col-lg-6 position-relative text-center d-flex justify-content-center" style="min-height: 500px;">
+                    <div id="animationStage" class="position-relative w-100 h-100 d-flex justify-content-center align-items-end" style="max-width: 400px; padding-bottom: 20px;">
+                        
+                        <!-- Background Blobs (Optional for Aesthetics) -->
+                        <div class="position-absolute translate-middle-y start-50 top-50 bg-secondary rounded-circle" style="width: 350px; height: 350px; opacity: 0.1; filter: blur(40px); z-index: 0;"></div>
+
+                        <!-- The Scoop (Hidden initially, placed high up) -->
+                        <img id="animatedScoop" src="https://png.pngtree.com/png-clipart/20230321/ourlarge/pngtree-a-scoop-of-strawberry-ice-cream-png-image_6656799.png" alt="Strawberry Scoop" style="width: 200px; height: auto; position: absolute; top: -300px; left: 50%; transform: translateX(-50%); z-index: 2; opacity: 0; filter: drop-shadow(0 15px 25px rgba(0,0,0,0.3));">
+                        
+                        <!-- The Cone (Sitting perfectly at bottom) -->
+                        <img id="coneImage" src="https://png.pngtree.com/png-vector/20240309/ourmid/pngtree-a-crispy-ice-cream-cone-png-image_11921319.png" alt="Waffle Cone" style="width: 160px; height: auto; position: relative; z-index: 1; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.4));">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="hero-divider-pink"></div>
+        <div class="hero-divider-pink position-absolute bottom-0 w-100 z-1" style="height: 15px; margin-bottom: -1px;"></div>
     </section>
 
     <!-- 2. Today's Featured Flavors -->
     <section class="section-padding">
         <div class="container text-center">
             <div class="section-title mb-5">
-                <h2 class="display-5 font-heading" style="color: #FF5252;">Today's Featured Flavors 🍧</h2>
+                <h2 class="display-5 font-heading" style="color: #FF5252;">Today's Featured Flavors </h2>
                 <p class="lead text-muted">Freshly churned this morning just for you!</p>
             </div>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="ice-cream-card hover-up">
-                        <div class="ratio ratio-1x1 overflow-hidden rounded-4">
-                            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=800&auto=format&fit=crop" class="card-img-top object-fit-cover scoop-trigger" alt="Coral Strawberry">
+                        <div class="overflow-hidden rounded-top-4" style="height: 250px;">
+                            <img src="https://png.pngtree.com/background/20250209/original/pngtree-background-of-smooth-strawberry-ice-cream-texture-picture-image_13443103.jpg"
+                                class="card-img-top object-fit-cover w-100 h-100 scoop-trigger" alt="Coral Strawberry">
                         </div>
                         <div class="card-body p-4">
-                            <h4 class="card-title fw-bold">Coral Strawberry 🍓</h4>
+                            <h4 class="card-title fw-bold">Coral Strawberry </h4>
                             <p class="card-text text-muted">Sun-ripened local strawberries blended with rich cream.</p>
-                            <span class="badge rounded-pill bg-danger-subtle text-danger px-3 shadow-sm">Popular</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="ice-cream-card hover-up">
-                        <div class="ratio ratio-1x1 overflow-hidden rounded-4">
-                            <img src="https://images.unsplash.com/photo-1549395156-9747d27e1482?q=80&w=800&auto=format&fit=crop" class="card-img-top object-fit-cover scoop-trigger" alt="Minty Fresh">
+                        <div class="overflow-hidden rounded-top-4" style="height: 250px;">
+                            <img src="https://cdnimg.webstaurantstore.com/images/products/large/850672/2962573.jpg"
+                                class="card-img-top object-fit-cover w-100 h-100 scoop-trigger" alt="Minty Fresh">
                         </div>
                         <div class="card-body p-4">
-                            <h4 class="card-title fw-bold">Minty Fresh 🌿</h4>
+                            <h4 class="card-title fw-bold">Minty Fresh </h4>
                             <p class="card-text text-muted">Organic garden mint with dark chocolate chunks.</p>
-                            <span class="badge rounded-pill bg-info-subtle text-info px-3 shadow-sm">Fresh</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="ice-cream-card hover-up">
-                        <div class="ratio ratio-1x1 overflow-hidden rounded-4">
-                            <img src="https://images.unsplash.com/photo-1516559173920-171049339a7a?q=80&w=800&auto=format&fit=crop" class="card-img-top object-fit-cover scoop-trigger" alt="Sun-Kissed Mango">
+                        <div class="overflow-hidden rounded-top-4" style="height: 250px;">
+                            <img src="https://png.pngtree.com/thumb_back/fw800/background/20251203/pngtree-scoop-of-vibrant-orange-mango-sorbet-on-a-dark-rustic-wooden-image_20714553.webp"
+                                class="card-img-top object-fit-cover w-100 h-100 scoop-trigger" alt="Sun-Kissed Mango">
                         </div>
                         <div class="card-body p-4">
-                            <h4 class="card-title fw-bold">Sun-Kissed Mango 🥭</h4>
+                            <h4 class="card-title fw-bold">Sun-Kissed Mango </h4>
                             <p class="card-text text-muted">Pure Alphonso mango pulp for a tropical burst.</p>
-                            <span class="badge rounded-pill bg-warning-subtle text-warning px-3 shadow-sm">Seasonal</span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="text-center mt-5">
-                <a href="flavors.html" class="btn btn-primary-custom px-5">Explore All 100+ Flavors ✨</a>
+                <a href="flavors.html" class="btn btn-primary-custom px-5">Explore All 100+ Flavors </a>
             </div>
         </div>
     </section>
@@ -98,11 +113,13 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-5 mb-lg-0">
-                    <img src="https://images.unsplash.com/photo-1505394033323-4241b211356e?q=80&w=1000&auto=format&fit=crop" class="img-fluid rounded-5 shadow-lg" alt="Quality Ingredients">
+                    <img src="https://images.unsplash.com/photo-1576506295286-5cda18df43e7?q=80&w=1000&auto=format&fit=crop"
+                        class="img-fluid rounded-5 shadow-lg" alt="Quality Ingredients">
                 </div>
                 <div class="col-lg-6 ps-lg-5">
-                    <h2 class="display-5 font-heading mb-4" style="color: #FF5252;">Nature's Sweetest Secrets 🍯</h2>
-                    <p class="lead mb-4">We believe that great ice cream starts with zero compromises. That's why we source every single ingredient with intention.</p>
+                    <h2 class="display-5 font-heading mb-4" style="color: #FF5252;">Nature's Sweetest Secrets </h2>
+                    <p class="lead mb-4">We believe that great ice cream starts with zero compromises. That's why we
+                        source every single ingredient with intention.</p>
                     <ul class="list-unstyled mb-5">
                         <li class="mb-3 d-flex align-items-center">
                             <i class="fas fa-check-circle text-primary me-3 fa-lg"></i>
@@ -117,7 +134,7 @@
                             <span>Hand-Roasted Nuts & Premium Belgian Chocolate</span>
                         </li>
                     </ul>
-                    <a href="ingredients.html" class="btn btn-outline-primary-custom px-5">Our Ingredient Story 🥛</a>
+                    <a href="ingredients.html" class="btn btn-primary-custom px-5">Our Ingredient Story </a>
                 </div>
             </div>
         </div>
@@ -127,34 +144,37 @@
     <section class="section-padding">
         <div class="container text-center">
             <div class="section-title mb-5">
-                <h2 class="display-5 font-heading" style="color: #FF5252;">Why We're Different 🌈</h2>
+                <h2 class="display-5 font-heading" style="color: #FF5252;">Why We're Different </h2>
             </div>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="p-4 bg-white rounded-5 shadow-sm hover-up h-100">
-                        <div class="icon-blob mb-4 mx-auto" style="background: #fff1f1; width: 100px; height: 100px; border-radius: 40% 60% 70% 30% / 40% 50% 60% 70%; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-heart fa-3x text-primary"></i>
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=200&auto=format&fit=crop"
+                            class="img-fluid rounded-circle mb-4 shadow"
+                            style="width: 100px; height: 100px; object-fit: cover;" alt="Made with Love">
                         <h4 class="fw-bold">Made with Love</h4>
-                        <p class="text-muted">Every batch is hand-churned by our passionate team of flavor enthusiasts.</p>
+                        <p class="text-muted">Every batch is hand-churned by our passionate team of flavor enthusiasts.
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="p-4 bg-white rounded-5 shadow-sm hover-up h-100">
-                        <div class="icon-blob mb-4 mx-auto" style="background: #e6f9ff; width: 100px; height: 100px; border-radius: 60% 40% 30% 70% / 50% 60% 70% 40%; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-magic fa-3x text-info"></i>
-                        </div>
+                        <img src="https://sweetapolita.com/cdn/shop/articles/double-rainbow-cake-cones-455884.jpg?v=1749224264"
+                            class="img-fluid rounded-circle mb-4 shadow"
+                            style="width: 100px; height: 100px; object-fit: cover;" alt="Pure Magic">
                         <h4 class="fw-bold">Pure Magic</h4>
-                        <p class="text-muted">No artificial colors or preservatives. Just pure, honest happiness in a scoop.</p>
+                        <p class="text-muted">No artificial colors or preservatives. Just pure, honest happiness in a
+                            scoop.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="p-4 bg-white rounded-5 shadow-sm hover-up h-100">
-                        <div class="icon-blob mb-4 mx-auto" style="background: #fff9e6; width: 100px; height: 100px; border-radius: 40% 50% 60% 70% / 60% 40% 30% 70%; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-users fa-3x text-warning"></i>
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?q=80&w=200&auto=format&fit=crop"
+                            class="img-fluid rounded-circle mb-4 shadow"
+                            style="width: 100px; height: 100px; object-fit: cover;" alt="Our Community">
                         <h4 class="fw-bold">Our Community</h4>
-                        <p class="text-muted">We're more than a shop; we're a hub for sweet memories and happy gatherings.</p>
+                        <p class="text-muted">We're more than a shop; we're a hub for sweet memories and happy
+                            gatherings.</p>
                     </div>
                 </div>
             </div>
@@ -166,13 +186,18 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-2 mb-5 mb-lg-0">
-                    <img src="img/about-home.jpg" class="img-fluid rounded-5 shadow-lg" alt="Our Story" onerror="this.src='https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1000&auto=format&fit=crop'">
+                    <img src="img/about-home.jpg" class="img-fluid rounded-5 shadow-lg" alt="Our Story"
+                        onerror="this.src='https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1000&auto=format&fit=crop'">
                 </div>
                 <div class="col-lg-6 order-lg-1 pe-lg-5">
-                    <h2 class="display-5 font-heading mb-4" style="color: #FF5252;">A Family Tradition of Sweetness 🍨</h2>
-                    <p class="lead mb-4">Born from a tiny kitchen and a big dream, Scoops & Smiles has been bringing the community together one cone at a time since 2010.</p>
-                    <p class="text-muted mb-5">Our founder, Sarah Jenkins, started with just three flavors. Today, we churn over 100 unique varieties, but the love and care in every batch remain exactly the same.</p>
-                    <a href="our-story.html" class="btn btn-secondary-custom px-5">The Full Story 📖</a>
+                    <h2 class="display-5 font-heading mb-4" style="color: #FF5252;">A Family Tradition of Sweetness
+                    </h2>
+                    <p class="lead mb-4">Born from a tiny kitchen and a big dream, Scoops & Smiles has been bringing the
+                        community together one cone at a time since 2010.</p>
+                    <p class="text-muted mb-5">Our founder, Sarah Jenkins, started with just three flavors. Today, we
+                        churn over 100 unique varieties, but the love and care in every batch remain exactly the same.
+                    </p>
+                    <a href="our-story.html" class="btn btn-primary-custom px-5">The Full Story </a>
                 </div>
             </div>
         </div>
@@ -182,49 +207,68 @@
     <section class="section-padding">
         <div class="container text-center">
             <div class="section-title mb-5">
-                <h2 class="display-5 font-heading" style="color: #FF5252;">Sweet Moments 📸</h2>
+                <h2 class="display-5 font-heading" style="color: #FF5252;">Sweet Moments </h2>
                 <p class="lead text-muted">Join the fun and share your smiles with us!</p>
             </div>
             <div class="row g-3">
                 <div class="col-md-4 col-6">
                     <div class="ratio ratio-1x1 rounded-4 overflow-hidden shadow-sm hover-up gallery-preview">
-                        <img src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?q=80&w=600&auto=format&fit=crop" class="img-fluid object-fit-cover" alt="Happy Moments">
+                        <img src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?q=80&w=600&auto=format&fit=crop"
+                            class="img-fluid object-fit-cover" alt="Happy Moments">
                     </div>
                 </div>
                 <div class="col-md-4 col-6">
                     <div class="ratio ratio-1x1 rounded-4 overflow-hidden shadow-sm hover-up gallery-preview">
-                        <img src="https://images.unsplash.com/photo-1549395156-9747d27e1482?q=80&w=600&auto=format&fit=crop" class="img-fluid object-fit-cover" alt="Ice Cream Variety">
+                        <img src="https://www.tastingtable.com/img/gallery/15-vintage-ice-cream-flavors-no-one-seems-to-eat-anymore/intro-1754958124.jpg"
+                            class="img-fluid object-fit-cover" alt="Ice Cream Variety">
                     </div>
                 </div>
                 <div class="col-md-4 d-none d-md-block">
                     <div class="ratio ratio-1x1 rounded-4 overflow-hidden shadow-sm hover-up gallery-preview">
-                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=600&auto=format&fit=crop" class="img-fluid object-fit-cover" alt="Store Front">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=600&auto=format&fit=crop"
+                            class="img-fluid object-fit-cover" alt="Store Front">
                     </div>
                 </div>
             </div>
             <div class="mt-5">
-                <a href="gallery.html" class="btn btn-outline-primary-custom px-5">View Full Gallery 🍦</a>
+                <a href="gallery.html" class="btn btn-primary-custom px-5">View Full Gallery </a>
             </div>
         </div>
     </section>
 
     <!-- 7. Scoop Club (Newsletter & Socials) -->
-    <section class="section-padding bg-primary text-white" style="background: linear-gradient(135deg, #FF6B6B 0%, #FF8E8E 100%);">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-lg-5 mb-5 mb-lg-0">
-                    <h2 class="display-4 font-heading mb-3">Join the Scoop Club! 🍦</h2>
-                    <p class="lead mb-0">Get exclusive flavor alerts, sweet deals, and community event invites delivered to your inbox.</p>
-                </div>
-                <div class="col-lg-6">
-                    <form class="bg-white p-4 rounded-5 shadow-lg d-flex gap-2">
-                        <input type="email" class="form-control rounded-pill border-0 px-4" placeholder="Your Email Address" required>
-                        <button type="submit" class="btn btn-accent-custom px-4 rounded-pill">Sign Up 🚀</button>
-                    </form>
-                    <div class="mt-4 d-flex gap-4 justify-content-center justify-content-lg-start">
-                        <a href="#" class="text-white fs-4 hover-up"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-white fs-4 hover-up"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-white fs-4 hover-up"><i class="fab fa-tiktok"></i></a>
+    <section class="section-padding position-relative"
+        style="background: url('https://images.unsplash.com/photo-1515037028865-0a2a82603f7c?q=80&w=1920&auto=format&fit=crop') center/cover fixed;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.4);"></div>
+
+        <div class="container position-relative z-1 py-5 my-3">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="p-5 rounded-5 shadow-lg text-center text-white"
+                        style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.3);">
+                        <h2 class="display-4 font-heading mb-3">Join the Scoop Club!</h2>
+                        <p class="lead mb-5 px-lg-5" style="text-shadow: 0 2px 4px rgba(0,0,0,0.3);">Get exclusive
+                            flavor alerts, sweet deals, and community event invites delivered right to your inbox.</p>
+
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <form class="input-group input-group-lg shadow-sm rounded-pill overflow-hidden"
+                                    style="background: rgba(255,255,255,0.9);">
+                                    <input type="email" class="form-control border-0 px-4 bg-transparent"
+                                        placeholder="Your Email Address" required>
+                                    <button type="submit" class="btn btn-primary-custom px-4 z-0">Sign Up</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="mt-5 d-flex gap-4 justify-content-center">
+                            <a href="#" class="text-white fs-4 hover-up"
+                                style="text-shadow: 0 2px 5px rgba(0,0,0,0.3);"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-white fs-4 hover-up"
+                                style="text-shadow: 0 2px 5px rgba(0,0,0,0.3);"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-white fs-4 hover-up"
+                                style="text-shadow: 0 2px 5px rgba(0,0,0,0.3);"><i class="fab fa-tiktok"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -243,4 +287,5 @@
     <!-- Custom JS -->
     <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find Your Flavor Today | Scoops & Smiles</title>
+    <meta name="description"
+        content="Explore a new way to enjoy ice cream. Scoops & Smiles Home 2 features our latest flavor sliders and seasonal specials. Visit us for a handcrafted treat!">
     <link rel="icon" type="image/png" href="favicon.png">
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,30 +20,36 @@
             display: flex;
             align-items: center;
         }
+
         .hero-left {
             padding: 100px 50px;
         }
+
         .hero-right {
             background: url('https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?q=80&w=1200&auto=format&fit=crop') center/cover;
             height: 100%;
             min-height: 60vh;
             border-radius: 0 0 0 150px;
         }
+
         .flavor-slider-container {
             padding: 100px 0;
             background: linear-gradient(180deg, #ffffff 0%, #fff9e6 100%);
         }
+
         .carousel-item-content {
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 50px;
         }
+
         .slider-img {
             max-width: 400px;
             border-radius: 50px;
             box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
         }
+
         .visit-us-section {
             background-color: var(--accent-color);
             color: white;
@@ -49,72 +58,89 @@
         }
     </style>
 </head>
+
 <body>
     <div id="header-placeholder"></div>
 
 
-    <!-- 1. Split Hero -->
-    <div class="container-fluid p-0 split-hero">
-        <div class="row g-0 w-100">
-            <div class="col-lg-6 hero-left bg-light d-flex align-items-center">
-                <div class="fade-in-up px-lg-5">
-                    <span class="badge bg-secondary text-dark mb-3 px-3 py-2 rounded-pill fw-bold">NEW SUMMER ARRIVALS 🍦</span>
-                    <h1 class="display-3 fw-bold mb-4 font-heading">Find Your <span class="text-primary">Perfect Scoop</span></h1>
-                    <p class="lead mb-5 text-muted">A playground of flavors waiting for you! Handcrafted every single day for that unbeatable fresh taste. Click the treats to see them drip!</p>
-                    <div class="d-flex flex-wrap gap-3">
-                        <a href="flavors.html" class="btn btn-primary-custom btn-lg">Explore Flavors 👋</a>
-                        <a href="menu.html" class="btn btn-outline-dark btn-lg rounded-pill px-4">Full Menu 📋</a>
+    <!-- 1. Glassmorphism Hero -->
+    <div class="container-fluid p-0 position-relative d-flex align-items-center"
+        style="background: url('https://images.unsplash.com/photo-1557142046-c704a3adf364?q=80&w=1920&auto=format&fit=crop') center/cover; min-height: 90vh;">
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-25"></div>
+        <div class="container position-relative z-1 py-5 mt-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-8">
+                    <div class="p-5 rounded-5 shadow-lg"
+                        style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.4);">
+                        <span class="badge bg-primary text-white mb-3 px-3 py-2 rounded-pill fw-bold shadow-sm"
+                            style="letter-spacing: 1px;">NEW SUMMER ARRIVALS</span>
+                        <h1 class="display-3 fw-bold mb-4 font-heading text-white"
+                            style="text-shadow: 2px 2px 6px rgba(0,0,0,0.5);">Find Your<br><span
+                                class="text-primary px-2 rounded-3"
+                                style="background: white; text-shadow: none;">Perfect Scoop</span></h1>
+                        <p class="lead mb-5 text-white fw-bold" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.6);">A
+                            playground of flavors waiting for you! Handcrafted every single day for that unbeatable
+                            fresh taste. Come find your favorite.</p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="flavors.html"
+                                class="btn btn-primary-custom btn-lg shadow-lg px-4 pulse-animation">Explore Flavors</a>
+                            <a href="menu.html"
+                                class="btn btn-light btn-lg rounded-pill px-4 shadow text-dark fw-bold">Full Menu</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 hero-right d-none d-lg-block position-relative">
-                <div class="pour-container"></div>
-            </div>
         </div>
-        <div class="hero-divider-pink"></div>
+        <div class="hero-divider-pink position-absolute bottom-0 w-100 z-1" style="height: 15px; margin-bottom: -1px;">
+        </div>
     </div>
 
     <!-- 2. Quick Bites (Categories) -->
     <section class="section-padding">
         <div class="container text-center">
             <div class="section-title mb-5">
-                <h2 class="display-5 font-heading" style="color: #FF5252;">Pick Your Pleasure 🧇</h2>
+                <h2 class="display-5 font-heading" style="color: #FF5252;">Pick Your Pleasure </h2>
                 <p class="lead text-muted">Most loved treats in Sweet City</p>
             </div>
             <div class="row g-4">
                 <div class="col-md-3 col-6 text-center">
                     <div class="p-4 rounded-5 shadow-sm border-0 bg-white h-100 hover-up transition-all">
                         <div class="ratio ratio-1x1 mb-3 mx-auto" style="width: 120px;">
-                            <img src="https://images.unsplash.com/photo-1576506295286-5cda18df43e7?q=80&w=200&auto=format&fit=crop" class="img-fluid rounded-circle scoop-trigger" alt="Cup" style="cursor: pointer;">
+                            <img src="https://images.unsplash.com/photo-1576506295286-5cda18df43e7?q=80&w=200&auto=format&fit=crop"
+                                class="img-fluid rounded-circle scoop-trigger" alt="Cup" style="cursor: pointer;">
                         </div>
-                        <h5 class="fw-bold">Standard Cup 🥣</h5>
+                        <h5 class="fw-bold">Standard Cup </h5>
                         <p class="text-muted small">Two scoops of joy</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-6 text-center">
                     <div class="p-4 rounded-5 shadow-sm border-0 bg-white h-100 hover-up transition-all">
                         <div class="ratio ratio-1x1 mb-3 mx-auto" style="width: 120px;">
-                            <img src="https://images.unsplash.com/photo-1559703248-dcaaec9fab78?q=80&w=200&auto=format&fit=crop" class="img-fluid rounded-circle scoop-trigger" alt="Waffle Cone" style="cursor: pointer;">
+                            <img src="https://images.unsplash.com/photo-1559703248-dcaaec9fab78?q=80&w=200&auto=format&fit=crop"
+                                class="img-fluid rounded-circle scoop-trigger" alt="Waffle Cone"
+                                style="cursor: pointer;">
                         </div>
-                        <h5 class="fw-bold">Waffle Cone 🧇</h5>
+                        <h5 class="fw-bold">Waffle Cone </h5>
                         <p class="text-muted small">Classic crunch</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-6 text-center">
                     <div class="p-4 rounded-5 shadow-sm border-0 bg-white h-100 hover-up transition-all">
                         <div class="ratio ratio-1x1 mb-3 mx-auto" style="width: 120px;">
-                            <img src="https://images.unsplash.com/photo-1551024506-0bcc0629729b?q=80&w=200&auto=format&fit=crop" class="img-fluid rounded-circle scoop-trigger" alt="Sundae" style="cursor: pointer;">
+                            <img src="https://images.squarespace-cdn.com/content/v1/647ce65092cabe153e583256/1691260645026-2ARSHTINKYWOTAF03A0W/https%3A%2F%2Fi.etsystatic.com%2F37520565%2Fr%2Fil%2F99e273%2F5091550089%2Fil_fullxfull.5091550089_4t38.jpg?format=2500w"
+                                class="img-fluid rounded-circle scoop-trigger" alt="Sundae" style="cursor: pointer;">
                         </div>
-                        <h5 class="fw-bold">Loaded Sundae 🍒</h5>
+                        <h5 class="fw-bold">Loaded Sundae </h5>
                         <p class="text-muted small">Topped out perfection</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-6 text-center">
                     <div class="p-4 rounded-5 shadow-sm border-0 bg-white h-100 hover-up transition-all">
                         <div class="ratio ratio-1x1 mb-3 mx-auto" style="width: 120px;">
-                            <img src="https://images.unsplash.com/photo-1505394033323-4241b211356e?q=80&w=200&auto=format&fit=crop" class="img-fluid rounded-circle scoop-trigger" alt="Shake" style="cursor: pointer;">
+                            <img src="https://images.presentationgo.com/2025/04/strawberry-milkshake-whipped-cream.jpg"
+                                class="img-fluid rounded-circle scoop-trigger" alt="Shake" style="cursor: pointer;">
                         </div>
-                        <h5 class="fw-bold">Thick Shakes 🥤</h5>
+                        <h5 class="fw-bold">Thick Shakes </h5>
                         <p class="text-muted small">Creamy & dreamy</p>
                     </div>
                 </div>
@@ -122,112 +148,166 @@
         </div>
     </section>
 
-    <!-- 3. Colorful Flavor Slider -->
-    <section class="flavor-slider-container">
+    <!-- 3. Colorful Flavor Grid -->
+    <section class="section-padding bg-light">
         <div class="container text-center">
             <div class="section-title mb-5">
-                <h2 class="display-5 font-heading" style="color: #FF5252;">Summer Favorites ☀️</h2>
+                <h2 class="display-5 font-heading" style="color: #FF5252;">Summer Favorites</h2>
+                <p class="lead text-muted">The hottest scoops to cool you down</p>
             </div>
-            <div id="flavorCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="carousel-item-content">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 text-center mb-4 mb-md-0">
-                                    <div class="position-relative d-inline-block">
-                                        <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?q=80&w=400&auto=format&fit=crop" class="slider-img img-fluid scoop-trigger" alt="Matcha" style="cursor: pointer;">
-                                        <div class="pour-container"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 text-start">
-                                    <h2 class="display-5 fw-bold text-success mb-3">Zen Matcha Solo 🍵</h2>
-                                    <p class="lead mb-4">Pure Japanese ceremonial grade matcha blended into a silk-smooth cream. It's an experience, not just a flavor.</p>
-                                    <h3 class="text-primary mb-4">$5.50 / Scoop</h3>
-                                    <a href="flavors.html" class="btn btn-accent-custom px-5">Learn More ✨</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-item-content">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 text-center mb-4 mb-md-0">
-                                    <div class="position-relative d-inline-block">
-                                        <img src="https://images.unsplash.com/photo-1560008511-11c63416e52d?q=80&w=400&auto=format&fit=crop" class="slider-img img-fluid scoop-trigger" alt="Blueberry" style="cursor: pointer;">
-                                        <div class="pour-container"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 text-start">
-                                    <h2 class="display-5 fw-bold text-info mb-3">Wild Blueberry Burst 🫐</h2>
-                                    <p class="lead mb-4">Organic wild blueberries hand-picked and swirled into our classic base with a hint of lemon zest.</p>
-                                    <h3 class="text-primary mb-4">$5.50 / Scoop</h3>
-                                    <a href="flavors.html" class="btn btn-accent-custom px-5">Learn More ✨</a>
-                                </div>
-                            </div>
+            <div class="row g-5 align-items-stretch">
+                <!-- Flavor 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div
+                        class="card border-0 rounded-5 shadow-sm h-100 hover-up bg-white overflow-hidden d-flex flex-column">
+                        <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?q=80&w=600&auto=format&fit=crop"
+                            class="card-img-top" alt="Matcha" style="height: 220px; object-fit: cover;">
+                        <div class="card-body p-4 text-center mt-n4 position-relative z-1 d-flex flex-column">
+                            <div><span class="badge bg-success text-white rounded-pill px-3 py-2 mb-3 shadow-sm">$5.50 /
+                                    Scoop</span></div>
+                            <h3 class="fw-bold font-heading mb-3">Zen Matcha Solo</h3>
+                            <p class="text-muted mb-4 flex-grow-1">Pure Japanese ceremonial grade matcha blended into a
+                                silk-smooth cream. It's an experience.</p>
+                            <a href="flavors.html" class="text-primary try-btn px-4 mt-auto">Try It
+                                Now</a>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#flavorCarousel" data-bs-slide="prev">
-                    <i class="fas fa-chevron-left fa-3x text-primary icon-bounce"></i>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#flavorCarousel" data-bs-slide="next">
-                    <i class="fas fa-chevron-right fa-3x text-primary icon-bounce"></i>
-                </button>
+                <!-- Flavor 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div
+                        class="card border-0 rounded-5 shadow-sm h-100 hover-up bg-white overflow-hidden d-flex flex-column">
+                        <img src="https://www.simplyrecipes.com/thmb/ANw6tMlbLZEUdDaeHt1DL7JcoN8%3D/1500x0/filters%3Ano_upscale%28%29%3Amax_bytes%28150000%29%3Astrip_icc%28%29/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2011__06__blueberry-sorbet-horiz-a-1600-51b815bafe0a4e308b3c5cf44f5c87a6.jpg"
+                            class="card-img-top" alt="Blueberry" style="height: 220px; object-fit: cover;">
+                        <div class="card-body p-4 text-center mt-n4 position-relative z-1 d-flex flex-column">
+                            <div><span class="badge bg-info text-white rounded-pill px-3 py-2 mb-3 shadow-sm">$5.50 /
+                                    Scoop</span></div>
+                            <h3 class="fw-bold font-heading mb-3">Wild Blueberry Burst</h3>
+                            <p class="text-muted mb-4 flex-grow-1">Organic wild blueberries hand-picked and swirled into
+                                our classic base with a hint of lemon zest.</p>
+                            <a href="flavors.html" class="text-primary try-btn px-4 mt-auto">Try It Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Flavor 3 -->
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div
+                        class="card border-0 rounded-5 shadow-sm h-100 hover-up bg-white overflow-hidden d-flex flex-column">
+                        <img src="https://png.pngtree.com/background/20250209/original/pngtree-background-of-smooth-strawberry-ice-cream-texture-picture-image_13443103.jpg"
+                            class="card-img-top" alt="Strawberry" style="height: 220px; object-fit: cover;">
+                        <div class="card-body p-4 text-center mt-n4 position-relative z-1 d-flex flex-column">
+                            <div><span class="badge bg-danger text-white rounded-pill px-3 py-2 mb-3 shadow-sm">$5.00 /
+                                    Scoop</span></div>
+                            <h3 class="fw-bold font-heading mb-3">Strawberry Fields</h3>
+                            <p class="text-muted mb-4 flex-grow-1">Farm-fresh strawberries chunked and puréed into rich
+                                dairy farm sweet cream.</p>
+                            <a href="flavors.html" class="text-primary try-btn px-4 mt-auto">Try It
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- 4. Catering & Events Teaser -->
-    <section class="section-padding bg-warning-subtle" style="border-radius: 0 150px 0 150px;">
+    <!-- 4. Modern Catering Teaser -->
+    <section class="section-padding py-0">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-lg-6">
+                    <div
+                        style="background: url('https://images.unsplash.com/photo-1515037028865-0a2a82603f7c?q=80&w=1200&auto=format&fit=crop') center/cover; min-height: 500px; height: 100%;">
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center"
+                    style="background: linear-gradient(135deg, #fff0f3 0%, #fdfaf5 100%); border-left: 2px solid rgba(255,107,107,0.1);">
+                    <div class="p-5 p-xl-6">
+                        <span
+                            class="badge bg-white text-danger mb-3 px-3 py-2 rounded-pill fw-bold shadow-sm border border-danger border-opacity-10">EVENT
+                            CATERING</span>
+                        <h2 class="display-5 font-heading mb-4 text-dark">Bring the Party to Life!</h2>
+                        <p class="lead mb-5 text-dark fw-normal" style="max-width: 500px;">Make your next event
+                            unforgettable with our premium ice cream catering. Weddings, corporate parties, or
+                            birthdays—we bring the vintage cart and the sweetest smiles!</p>
+                        <a href="catering.html" class="btn btn-primary-custom btn-lg px-5 rounded-pill shadow">Book Your
+                            Event</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Chat Bubble Testimonials -->
+    <section class="section-padding" style="background: linear-gradient(180deg, #fff 0%, #fff0f3 100%);">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1000&auto=format&fit=crop" class="img-fluid rounded-5 shadow-lg" alt="Catering">
-                </div>
-                <div class="col-lg-6 ps-lg-5">
-                    <h2 class="display-5 font-heading mb-4" style="color: #FF5252;">Bring the Party to Life! 🎊</h2>
-                    <p class="lead mb-4">Make your next event unforgettable with our premium ice cream catering. Weddings, corporate parties, or birthdays—we bring the cart and the smiles!</p>
-                    <a href="catering.html" class="btn btn-primary-custom px-5">Book Your Event 🎈</a>
-                </div>
+            <div class="section-title text-center mb-5">
+                <h2 class="display-5 font-heading" style="color: #FF5252;">Sweet Words</h2>
+                <p class="lead text-muted">What our community says about us</p>
             </div>
-        </div>
-    </section>
-
-    <!-- 5. Sweet Testimonials -->
-    <section class="section-padding">
-        <div class="container text-center">
-            <div class="section-title mb-5">
-                <h2 class="display-5 font-heading" style="color: #FF5252;">Sweet Words ❤️</h2>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="p-5 bg-light rounded-5 shadow-sm hover-up h-100">
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 bg-white shadow-sm hover-up h-100 position-relative"
+                        style="border-radius: 30px 30px 30px 5px;">
                         <div class="mb-3 text-warning">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
-                        <p class="fst-italic text-muted mb-4">"The best ice cream in town! The Mango flavor is a literal dream."</p>
-                        <h5 class="fw-bold mb-0">Emily R.</h5>
-                        <small class="text-muted">Happy Mom</small>
+                        <p class="fst-italic text-dark mb-4 fs-5">"The best ice cream in town! The Mango flavor is a
+                            literal dream. We come here every Sunday."</p>
+                        <hr class="text-muted" style="opacity: 0.1;">
+                        <div class="d-flex align-items-center mt-3">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=150&auto=format&fit=crop"
+                                alt="Emily" class="rounded-circle shadow-sm"
+                                style="width: 50px; height: 50px; object-fit: cover;">
+                            <div class="ms-3">
+                                <h6 class="fw-bold mb-0">Emily R.</h6>
+                                <small class="text-muted">Happy Mom</small>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="p-5 bg-light rounded-5 shadow-sm hover-up h-100">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="p-4 bg-white shadow-sm hover-up h-100 position-relative"
+                        style="border-radius: 30px 30px 30px 5px;">
                         <div class="mb-3 text-warning">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
-                        <p class="fst-italic text-muted mb-4">"We hired them for our wedding and our guests couldn't stop talking about it!"</p>
-                        <h5 class="fw-bold mb-0">James & Sarah</h5>
-                        <small class="text-muted">Newlyweds</small>
+                        <p class="fst-italic text-dark mb-4 fs-5 w-100 float-start">"We hired them for our wedding and
+                            our guests couldn't stop talking about it! The vintage cart was gorgeous."</p>
+                        <div class="clearfix"></div>
+                        <hr class="text-muted" style="opacity: 0.1;">
+                        <div class="d-flex align-items-center mt-3">
+                            <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=150&auto=format&fit=crop"
+                                alt="James" class="rounded-circle shadow-sm"
+                                style="width: 50px; height: 50px; object-fit: cover;">
+                            <div class="ms-3">
+                                <h6 class="fw-bold mb-0">James & Sarah</h6>
+                                <small class="text-muted">Newlyweds</small>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="p-5 bg-light rounded-5 shadow-sm hover-up h-100">
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="p-4 bg-white shadow-sm hover-up h-100 position-relative"
+                        style="border-radius: 30px 30px 30px 5px;">
                         <div class="mb-3 text-warning">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
-                        <p class="fst-italic text-muted mb-4">"Their commitment to local ingredients really shows in every bite."</p>
-                        <h5 class="fw-bold mb-0">David L.</h5>
-                        <small class="text-muted">Local Foodie</small>
+                        <p class="fst-italic text-dark mb-4 fs-5 w-100 float-start">"Their commitment to local
+                            ingredients really shows in every bite. Quality you can actually taste."</p>
+                        <div class="clearfix"></div>
+                        <hr class="text-muted" style="opacity: 0.1;">
+                        <div class="d-flex align-items-center mt-3">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop"
+                                alt="David" class="rounded-circle shadow-sm"
+                                style="width: 50px; height: 50px; object-fit: cover;">
+                            <div class="ms-3">
+                                <h6 class="fw-bold mb-0">David L.</h6>
+                                <small class="text-muted">Local Foodie</small>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -240,28 +320,32 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-title text-center mb-5">
-                        <h2 class="display-5 font-heading" style="color: #FF5252;">Scoop Secrets (FAQ) 🤫</h2>
+                        <h2 class="display-5 font-heading" style="color: #FF5252;">Scoop Secrets (FAQ) </h2>
                     </div>
                     <div class="accordion accordion-flush rounded-5 overflow-hidden shadow-sm" id="faqAccordion">
                         <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                              Do you have dairy-free options? 🌿
-                            </button>
-                          </h2>
-                          <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body text-muted">Yes! We always have at least 4 vegan and dairy-free options available daily.</div>
-                          </div>
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Do you have dairy-free options?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">Yes! We always have at least 4 vegan and
+                                    dairy-free options available daily.</div>
+                            </div>
                         </div>
                         <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                              Can I order custom flavors? 🪄
-                            </button>
-                          </h2>
-                          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body text-muted">Absolutely! For bulk orders, we can create a signature flavor just for you.</div>
-                          </div>
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Can I order custom flavors?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">Absolutely! For bulk orders, we can create a
+                                    signature flavor just for you.</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -269,30 +353,41 @@
         </div>
     </section>
 
-    <!-- 7. Visit Us Section -->
-    <section class="visit-us-section text-center">
-        <div class="container text-center">
-            <h2 class="display-4 fw-bold mb-5 font-heading text-white">Find Your Flavor Today 📍</h2>
-            <div class="row g-5">
-                <div class="col-md-4">
-                    <i class="fas fa-map-marked-alt fa-3x mb-3 text-secondary icon-bounce"></i>
-                    <h4 class="fw-bold">Our Location</h4>
-                    <p class="text-white-50">123 Ice Cream Lane,<br>Sweet City, SC 5678</p>
+    <!-- 7. Instagram Social Wall -->
+    <section class="section-padding bg-white pb-5">
+        <div class="container text-center mb-5">
+            <span class="badge bg-danger text-white px-3 py-2 rounded-pill fw-bold mb-3"><i
+                    class="fab fa-instagram me-2"></i>@ScoopsAndSmiles</span>
+            <h2 class="display-5 font-heading" style="color: #FF5252;">Share Your Smiles</h2>
+            <p class="lead text-muted">Tag us to be featured on our sweet wall!</p>
+        </div>
+        <div class="container-fluid px-0">
+            <div class="row g-0 flex-nowrap overflow-hidden" style="max-height: 350px;">
+                <div class="col-6 col-md-3">
+                    <img src="https://www.verybestbaking.com/sites/g/files/jgfbjl326/files/styles/large/public/recipe-thumbnail/99094-2020_06_03T13_22_21_mrs_ImageRecipes_147692lrg.jpg?itok=YMCjtLcJ"
+                        class="img-fluid w-100 h-100 object-fit-cover hover-up transition-all" alt="Insta 1"
+                        style="min-height: 350px; cursor: pointer; filter: brightness(0.9);">
                 </div>
-                <div class="col-md-4">
-                    <i class="fas fa-clock fa-3x mb-3 text-secondary icon-bounce"></i>
-                    <h4 class="fw-bold">Open Hours</h4>
-                    <p class="text-white-50">Mon - Thu: 11 AM - 9 PM<br>Fri - Sun: 11 AM - 11 PM</p>
+                <div class="col-6 col-md-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Rolled_ice_cream.jpg/960px-Rolled_ice_cream.jpg"
+                        class="img-fluid w-100 h-100 object-fit-cover hover-up transition-all" alt="Insta 2"
+                        style="min-height: 350px; cursor: pointer; filter: brightness(0.9);">
                 </div>
-                <div class="col-md-4">
-                    <i class="fas fa-paper-plane fa-3x mb-3 text-secondary icon-bounce"></i>
-                    <h4 class="fw-bold">Get In Touch</h4>
-                    <p class="text-white-50">hello@scoopssmiles.com<br>+1 (555) 123-4567</p>
+                <div class="col-6 col-md-3">
+                    <img src="https://images.unsplash.com/photo-1576506295286-5cda18df43e7?q=80&w=600&auto=format&fit=crop"
+                        class="img-fluid w-100 h-100 object-fit-cover hover-up transition-all" alt="Insta 3"
+                        style="min-height: 350px; cursor: pointer; filter: brightness(0.9);">
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="https://images.unsplash.com/photo-1559703248-dcaaec9fab78?q=80&w=600&auto=format&fit=crop"
+                        class="img-fluid w-100 h-100 object-fit-cover hover-up transition-all" alt="Insta 4"
+                        style="min-height: 350px; cursor: pointer; filter: brightness(0.9);">
                 </div>
             </div>
-            <div class="mt-5 pt-4">
-                <a href="contact.html" class="btn btn-secondary-custom btn-lg px-5 text-dark fw-bold shadow">Get Directions 🗺️</a>
-            </div>
+        </div>
+        <div class="text-center mt-5 mb-4">
+            <button class="btn btn-outline-danger btn-lg rounded-pill px-5 fw-bold bg-white shadow-sm border-2">Follow
+                Us on Instagram</button>
         </div>
     </section>
 
@@ -307,4 +402,5 @@
     <!-- Custom JS -->
     <script src="js/main.js"></script>
 </body>
+
 </html>
