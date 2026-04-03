@@ -44,16 +44,16 @@
 
             <!-- Filter Tabs -->
             <div class="d-flex justify-content-center flex-wrap gap-2 mb-5">
-                <button class="btn btn-outline-primary filter-btn active px-4 rounded-pill" data-filter="all">
+                <button class="btn btn-outline-danger filter-btn active px-4 rounded-pill" data-filter="all">
                     <i class="fas fa-border-all me-1"></i> All Flavors
                 </button>
-                <button class="btn btn-outline-primary filter-btn px-4 rounded-pill" data-filter="seasonal">
+                <button class="btn btn-outline-danger filter-btn px-4 rounded-pill" data-filter="seasonal">
                     <i class="fas fa-snowflake me-1"></i> Seasonal Specials
                 </button>
-                <button class="btn btn-outline-primary filter-btn px-4 rounded-pill" data-filter="vegan">
+                <button class="btn btn-outline-danger filter-btn px-4 rounded-pill" data-filter="vegan">
                     <i class="fas fa-leaf me-1"></i> Vegan Options
                 </button>
-                <button class="btn btn-outline-primary filter-btn px-4 rounded-pill" data-filter="classics">
+                <button class="btn btn-outline-danger filter-btn px-4 rounded-pill" data-filter="classics">
                     <i class="fas fa-star me-1"></i> Classic Favorites
                 </button>
             </div>
@@ -66,7 +66,7 @@
             <div class="row g-4" id="flavor-grid">
                 <!-- Classic Vanilla -->
                 <div class="col-md-4 flavor-card" data-category="classics">
-                    <div class="ice-cream-card position-relative overflow-hidden">
+                    <div class="ice-cream-card position-relative overflow-hidden card-h-100">
                         <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?q=80&w=800&auto=format&fit=crop"
                             alt="Classic Vanilla" class="scoop-trigger" style="cursor: pointer;">
                         <div class="pour-container"></div>
@@ -82,7 +82,7 @@
                 </div>
                 <!-- Belgian Chocolate -->
                 <div class="col-md-4 flavor-card" data-category="classics">
-                    <div class="ice-cream-card position-relative overflow-hidden">
+                    <div class="ice-cream-card position-relative overflow-hidden card-h-100">
                         <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=800&auto=format&fit=crop"
                             alt="Belgian Chocolate" class="scoop-trigger" style="cursor: pointer;">
                         <div class="pour-container"></div>
@@ -97,7 +97,7 @@
                 </div>
                 <!-- Coral Strawberry -->
                 <div class="col-md-4 flavor-card" data-category="seasonal">
-                    <div class="ice-cream-card position-relative overflow-hidden">
+                    <div class="ice-cream-card position-relative overflow-hidden card-h-100">
                         <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?q=80&w=800&auto=format&fit=crop"
                             alt="Coral Strawberry" class="scoop-trigger" style="cursor: pointer;">
                         <div class="pour-container"></div>
@@ -113,7 +113,7 @@
                 </div>
                 <!-- Vegan Coconut Mint -->
                 <div class="col-md-4 flavor-card" data-category="vegan">
-                    <div class="ice-cream-card position-relative overflow-hidden">
+                    <div class="ice-cream-card position-relative overflow-hidden card-h-100">
                         <img src="https://www.seriouseats.com/thmb/iKd9dXxYplkjdZf4N2MJ6Sf-ix4%3D/1500x0/filters%3Ano_upscale%28%29%3Amax_bytes%28150000%29%3Astrip_icc%28%29/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2015__02__20150223-vegan-ice-cream-vicky-wasik-1-edfec55ab30f4271ba135000d0f4d3f8.jpg"
                             alt="Coconut Mint" class="scoop-trigger" style="cursor: pointer;">
                         <div class="pour-container"></div>
@@ -127,7 +127,7 @@
                 </div>
                 <!-- Salted Caramel -->
                 <div class="col-md-4 flavor-card" data-category="classics">
-                    <div class="ice-cream-card position-relative overflow-hidden">
+                    <div class="ice-cream-card position-relative overflow-hidden card-h-100">
                         <img src="https://www.thespruceeats.com/thmb/jZmYRDpWby4VM4r2w5Cah1Vth_U%3D/1500x0/filters%3Ano_upscale%28%29%3Amax_bytes%28150000%29%3Astrip_icc%28%29/SaltedCaramelIceCreamHERO-9e49945bc9fb4afca856e37f5b1bbbe5.jpg"
                             alt="Salted Caramel" class="scoop-trigger" style="cursor: pointer;">
                         <div class="pour-container"></div>
@@ -141,7 +141,7 @@
                 </div>
                 <!-- Mango Sorbet -->
                 <div class="col-md-4 flavor-card" data-category="vegan">
-                    <div class="ice-cream-card position-relative overflow-hidden">
+                    <div class="ice-cream-card position-relative overflow-hidden card-h-100">
                         <img src="https://hips.hearstapps.com/hmg-prod/images/mango-sorbet-3252-669e6bff5de91.jpg?crop=0.502xw%3A1.00xh%3B0.444xw%2C0&resize=1200%3A%2A"
                             alt="Mango Sorbet" class="scoop-trigger" style="cursor: pointer;">
                         <div class="pour-container"></div>
@@ -165,7 +165,7 @@
             <h2 class="display-5 font-heading mb-5" style="color: #FF5252;">👉 Customer Favorites</h2>
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="ice-cream-card border-0 shadow-sm position-relative overflow-hidden">
+                    <div class="ice-cream-card border-0 shadow-sm position-relative overflow-hidden card-h-100">
                         <img src="https://images.unsplash.com/photo-1579954115545-a95591f28be0?q=80&w=800&auto=format&fit=crop"
                             class="card-img-top scoop-trigger" alt="Most Popular" style="cursor: pointer;">
                         <div class="pour-container"></div>
@@ -177,7 +177,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="ice-cream-card border-0 shadow-sm position-relative overflow-hidden">
+                    <div class="ice-cream-card border-0 shadow-sm position-relative overflow-hidden card-h-100">
                         <img src="https://images.unsplash.com/photo-1505394033323-4241b211356e?q=80&w=800&auto=format&fit=crop"
                             class="card-img-top scoop-trigger" alt="Chef's Special" style="cursor: pointer;">
                         <div class="pour-container"></div>
@@ -189,7 +189,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="ice-cream-card border-0 shadow-sm position-relative overflow-hidden">
+                    <div class="ice-cream-card border-0 shadow-sm position-relative overflow-hidden card-h-100">
                         <img src="https://images.unsplash.com/photo-1549395156-9747d27e1482?q=80&w=800&auto=format&fit=crop"
                             class="card-img-top scoop-trigger" alt="Seasonal Hit" style="cursor: pointer;">
                         <div class="pour-container"></div>

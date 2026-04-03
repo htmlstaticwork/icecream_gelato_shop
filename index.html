@@ -23,38 +23,43 @@
     <!-- Navbar -->
 
     <!-- Hero Slider Section -->
-    <!-- Interactive Drop Animation Hero Section -->
-    <section class="hero-section position-relative overflow-hidden" style="background: linear-gradient(135deg, #fff0f3 0%, #ffffff 100%); min-height: 85vh; display: flex; align-items: center;">
+    <section class="hero-section position-relative overflow-hidden" style="min-height: 85vh; display: flex; align-items: center;">
+        
+        <!-- Hero Background Slider -->
+        <div id="heroSlider" class="hero-slider-bg position-absolute top-0 start-0 w-100 h-100">
+            <div class="hero-slide active" style="background-image: url('img/hero-bg-1.png');"></div>
+            <div class="hero-slide" style="background-image: url('img/hero-bg-2.png');"></div>
+            <div class="hero-slide" style="background-image: url('img/hero-bg-3.png');"></div>
+            <div class="hero-overlay"></div>
+        </div>
+
         <div class="container position-relative z-1 py-5 mt-5">
             <div class="row align-items-center">
-                <div class="col-lg-6 hero-content text-lg-start text-center mb-5 mb-lg-0 pe-lg-5">
-                    <span class="badge bg-primary text-white mb-3 px-3 py-2 rounded-pill fw-bold shadow-sm" style="letter-spacing: 1px;">INTERACTIVE EXPERIENCE</span>
-                    <h1 class="display-3 fw-bold font-heading mb-4 text-dark">Build Your <br><span class="text-primary position-relative d-inline-block">Perfect Scoop
+                <div class="col-lg-6 hero-content text-lg-start text-center mb-5 mb-lg-0 pe-lg-5" style="z-index: 10;">
+                    <span class="badge bg-primary text-white mb-3 px-3 py-2 rounded-pill fw-bold shadow-sm" style="letter-spacing: 1px;">PREMIUM ICE CREAM</span>
+                    <h1 class="display-3 fw-bold font-heading mb-4 text-dark shadow-text">Indulge in <br><span class="text-primary position-relative d-inline-block">Pure Happiness
                         <svg class="position-absolute w-100 h-100 start-0 top-0 text-secondary" style="z-index: -1; transform: scale(1.1) translateY(10%); opacity: 0.2" viewBox="0 0 200 60"><path fill="currentColor" d="M0,40 Q100,0 200,40 Q100,80 0,40 Z"></path></svg>
                     </span></h1>
-                    <p class="lead mb-5 text-muted fw-normal" style="max-width: 500px;">Crafting joy, one scoop at a time. Drop a fresh scoop into the cone and watch the magic happen!</p>
+                    <p class="lead mb-5 text-dark fw-bold" style="max-width: 500px; text-shadow: 0 1px 2px rgba(255,255,255,0.8);">Experience the finest handcrafted ice cream, made with love and the freshest local ingredients. Every scoop is a celebration of flavor.</p>
                     <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
-                        <button id="dropScoopBtn" class="btn btn-primary-custom btn-lg px-4 pulse-animation shadow-lg fs-5"><i class="fas fa-hand-pointer me-2"></i>Drop a Scoop!</button>
-                        <a href="flavors.html" class="btn btn-outline-dark btn-lg rounded-pill px-4 bg-white shadow-sm fs-5">Explore Menu</a>
+                        <a href="flavors.html" class="btn btn-primary-custom btn-lg px-5 py-3 shadow-lg fs-4 fw-bold">Explore Our Flavors</a>
+                        <a href="about.html" class="btn btn-outline-dark btn-lg rounded-pill px-4 bg-white shadow-sm fs-5">Learn More</a>
                     </div>
                 </div>
-                <!-- Animation Stage -->
-                <div class="col-lg-6 position-relative text-center d-flex justify-content-center" style="min-height: 500px;">
-                    <div id="animationStage" class="position-relative w-100 h-100 d-flex justify-content-center align-items-end" style="max-width: 400px; padding-bottom: 20px;">
-                        
-                        <!-- Background Blobs (Optional for Aesthetics) -->
-                        <div class="position-absolute translate-middle-y start-50 top-50 bg-secondary rounded-circle" style="width: 350px; height: 350px; opacity: 0.1; filter: blur(40px); z-index: 0;"></div>
-
-                        <!-- The Scoop (Hidden initially, placed high up) -->
-                        <img id="animatedScoop" src="https://png.pngtree.com/png-clipart/20230321/ourlarge/pngtree-a-scoop-of-strawberry-ice-cream-png-image_6656799.png" alt="Strawberry Scoop" style="width: 200px; height: auto; position: absolute; top: -300px; left: 50%; transform: translateX(-50%); z-index: 2; opacity: 0; filter: drop-shadow(0 15px 25px rgba(0,0,0,0.3));">
-                        
-                        <!-- The Cone (Sitting perfectly at bottom) -->
-                        <img id="coneImage" src="https://png.pngtree.com/png-vector/20240309/ourmid/pngtree-a-crispy-ice-cream-cone-png-image_11921319.png" alt="Waffle Cone" style="width: 160px; height: auto; position: relative; z-index: 1; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.4));">
+                <!-- Single Hero Image -->
+                <div class="col-lg-6 col-12 position-relative text-center d-flex flex-column justify-content-center align-items-center" style="min-height: 500px; z-index: 10;">
+                    <div class="hero-image-wrapper float-animation position-relative scoop-trigger" style="cursor: pointer;">
+                        <img src="img/hero-main.png" alt="Handcrafted Ice Cream" class="img-fluid" style="max-width: 450px; filter: drop-shadow(0 30px 50px rgba(0,0,0,0.2)); mix-blend-mode: multiply;">
+                        <div class="pour-container"></div>
+                    </div>
+                    <!-- Interactive Hint -->
+                    <div class="mt-4 px-4 py-2 bg-white rounded-pill shadow-sm animate-pulse" style="border: 2px dashed var(--primary-color);">
+                        <span class="text-primary fw-bold"><i class="fas fa-hand-pointer me-2"></i>Tap to Scoop Happiness!</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="hero-divider-pink position-absolute bottom-0 w-100 z-1" style="height: 15px; margin-bottom: -1px;"></div>
+        <div class="hero-divider hero-divider-pink" style="z-index: 20;"></div>
     </section>
 
     <!-- 2. Today's Featured Flavors -->
@@ -66,7 +71,7 @@
             </div>
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="ice-cream-card hover-up">
+                    <div class="ice-cream-card hover-up h-100">
                         <div class="overflow-hidden rounded-top-4" style="height: 250px;">
                             <img src="https://png.pngtree.com/background/20250209/original/pngtree-background-of-smooth-strawberry-ice-cream-texture-picture-image_13443103.jpg"
                                 class="card-img-top object-fit-cover w-100 h-100 scoop-trigger" alt="Coral Strawberry">
@@ -78,7 +83,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="ice-cream-card hover-up">
+                    <div class="ice-cream-card hover-up h-100">
                         <div class="overflow-hidden rounded-top-4" style="height: 250px;">
                             <img src="https://cdnimg.webstaurantstore.com/images/products/large/850672/2962573.jpg"
                                 class="card-img-top object-fit-cover w-100 h-100 scoop-trigger" alt="Minty Fresh">
@@ -90,7 +95,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="ice-cream-card hover-up">
+                    <div class="ice-cream-card hover-up h-100">
                         <div class="overflow-hidden rounded-top-4" style="height: 250px;">
                             <img src="https://png.pngtree.com/thumb_back/fw800/background/20251203/pngtree-scoop-of-vibrant-orange-mango-sorbet-on-a-dark-rustic-wooden-image_20714553.webp"
                                 class="card-img-top object-fit-cover w-100 h-100 scoop-trigger" alt="Sun-Kissed Mango">

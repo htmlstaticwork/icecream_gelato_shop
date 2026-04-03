@@ -64,24 +64,24 @@
 
 
     <!-- 1. Glassmorphism Hero -->
-    <div class="container-fluid p-0 position-relative d-flex align-items-center"
-        style="background: url('https://images.unsplash.com/photo-1557142046-c704a3adf364?q=80&w=1920&auto=format&fit=crop') center/cover; min-height: 90vh;">
-        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-25"></div>
-        <div class="container position-relative z-1 py-5 mt-5">
-            <div class="row">
-                <div class="col-lg-6 col-md-8">
-                    <div class="p-5 rounded-5 shadow-lg"
-                        style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.4);">
+    <section class="hero-section text-center text-white position-relative d-flex align-items-center justify-content-center"
+        style="background: url('img/hero-bg-2.png') center/cover; min-height: 90vh;">
+        <div class="position-absolute top-0 start-0 w-100 h-100 hero-overlay-dark"></div>
+        <div class="container position-relative z-1 py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="glass-hero-card p-5 rounded-5 shadow-lg mx-auto d-flex flex-column align-items-center"
+                        style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.4); max-width: 800px;">
                         <span class="badge bg-primary text-white mb-3 px-3 py-2 rounded-pill fw-bold shadow-sm"
                             style="letter-spacing: 1px;">NEW SUMMER ARRIVALS</span>
                         <h1 class="display-3 fw-bold mb-4 font-heading text-white"
                             style="text-shadow: 2px 2px 6px rgba(0,0,0,0.5);">Find Your<br><span
-                                class="text-primary px-2 rounded-3"
+                                class="text-primary px-3 rounded-3 d-inline-block"
                                 style="background: white; text-shadow: none;">Perfect Scoop</span></h1>
-                        <p class="lead mb-5 text-white fw-bold" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.6);">A
+                        <p class="lead mb-5 text-white fw-bold mx-auto" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.6); max-width: 600px;">A
                             playground of flavors waiting for you! Handcrafted every single day for that unbeatable
                             fresh taste. Come find your favorite.</p>
-                        <div class="d-flex flex-wrap gap-3">
+                        <div class="d-flex flex-wrap gap-3 justify-content-center">
                             <a href="flavors.html"
                                 class="btn btn-primary-custom btn-lg shadow-lg px-4 pulse-animation">Explore Flavors</a>
                             <a href="menu.html"
@@ -91,9 +91,9 @@
                 </div>
             </div>
         </div>
-        <div class="hero-divider-pink position-absolute bottom-0 w-100 z-1" style="height: 15px; margin-bottom: -1px;">
-        </div>
-    </div>
+        <!-- Curved Divider -->
+        <div class="hero-divider hero-divider-pink" style="z-index: 20;"></div>
+    </section>
 
     <!-- 2. Quick Bites (Categories) -->
     <section class="section-padding">
@@ -237,75 +237,85 @@
         </div>
     </section>
 
-    <!-- 5. Chat Bubble Testimonials -->
-    <section class="section-padding" style="background: linear-gradient(180deg, #fff 0%, #fff0f3 100%);">
+    <!-- 5. Sweet Words (Testimonials) -->
+    <section class="section-padding" style="background-color: #fff9f9;">
         <div class="container">
             <div class="section-title text-center mb-5">
                 <h2 class="display-5 font-heading" style="color: #FF5252;">Sweet Words</h2>
-                <p class="lead text-muted">What our community says about us</p>
+                <p class="lead text-muted">What our lovely scoopers are saying!</p>
             </div>
             <div class="row g-4 justify-content-center">
                 <div class="col-lg-4 col-md-6">
-                    <div class="p-4 bg-white shadow-sm hover-up h-100 position-relative"
-                        style="border-radius: 30px 30px 30px 5px;">
-                        <div class="mb-3 text-warning">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <div class="p-4 bg-white shadow-sm hover-up h-100 position-relative d-flex flex-column justify-content-between"
+                        style="border-radius: 30px 30px 30px 5px; border: 1px solid rgba(255,107,107,0.1);">
+                        <div>
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="fst-italic text-dark mb-4 fs-5">"The best ice cream in town! The Mango flavor is a
+                                literal dream. We come here every Sunday."</p>
                         </div>
-                        <p class="fst-italic text-dark mb-4 fs-5">"The best ice cream in town! The Mango flavor is a
-                            literal dream. We come here every Sunday."</p>
-                        <hr class="text-muted" style="opacity: 0.1;">
-                        <div class="d-flex align-items-center mt-3">
-                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=150&auto=format&fit=crop"
-                                alt="Emily" class="rounded-circle shadow-sm"
-                                style="width: 50px; height: 50px; object-fit: cover;">
-                            <div class="ms-3">
-                                <h6 class="fw-bold mb-0">Emily R.</h6>
-                                <small class="text-muted">Happy Mom</small>
+                        <div class="mt-auto">
+                            <hr class="text-muted" style="opacity: 0.1;">
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=150&auto=format&fit=crop"
+                                    alt="Emily" class="rounded-circle shadow-sm"
+                                    style="width: 50px; height: 50px; object-fit: cover;">
+                                <div class="ms-3 text-start">
+                                    <h6 class="fw-bold mb-0">Emily R.</h6>
+                                    <small class="text-muted">Happy Mom</small>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="p-4 bg-white shadow-sm hover-up h-100 position-relative"
-                        style="border-radius: 30px 30px 30px 5px;">
-                        <div class="mb-3 text-warning">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <div class="p-4 bg-white shadow-sm hover-up h-100 position-relative d-flex flex-column justify-content-between"
+                        style="border-radius: 30px 30px 30px 5px; border: 1px solid rgba(255,107,107,0.1);">
+                        <div>
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="fst-italic text-dark mb-4 fs-5">"We hired them for our wedding and
+                                our guests couldn't stop talking about it! The vintage cart was gorgeous."</p>
                         </div>
-                        <p class="fst-italic text-dark mb-4 fs-5 w-100 float-start">"We hired them for our wedding and
-                            our guests couldn't stop talking about it! The vintage cart was gorgeous."</p>
-                        <div class="clearfix"></div>
-                        <hr class="text-muted" style="opacity: 0.1;">
-                        <div class="d-flex align-items-center mt-3">
-                            <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=150&auto=format&fit=crop"
-                                alt="James" class="rounded-circle shadow-sm"
-                                style="width: 50px; height: 50px; object-fit: cover;">
-                            <div class="ms-3">
-                                <h6 class="fw-bold mb-0">James & Sarah</h6>
-                                <small class="text-muted">Newlyweds</small>
+                        <div class="mt-auto">
+                            <hr class="text-muted" style="opacity: 0.1;">
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=150&auto=format&fit=crop"
+                                    alt="James" class="rounded-circle shadow-sm"
+                                    style="width: 50px; height: 50px; object-fit: cover;">
+                                <div class="ms-3 text-start">
+                                    <h6 class="fw-bold mb-0">James & Sarah</h6>
+                                    <small class="text-muted">Newlyweds</small>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12 mb-4">
-                    <div class="p-4 bg-white shadow-sm hover-up h-100 position-relative"
-                        style="border-radius: 30px 30px 30px 5px;">
-                        <div class="mb-3 text-warning">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <div class="p-4 bg-white shadow-sm hover-up h-100 position-relative d-flex flex-column justify-content-between"
+                        style="border-radius: 30px 30px 30px 5px; border: 1px solid rgba(255,107,107,0.1);">
+                        <div>
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="fst-italic text-dark mb-4 fs-5">"Their commitment to local
+                                ingredients really shows in every bite. Quality you can actually taste."</p>
                         </div>
-                        <p class="fst-italic text-dark mb-4 fs-5 w-100 float-start">"Their commitment to local
-                            ingredients really shows in every bite. Quality you can actually taste."</p>
-                        <div class="clearfix"></div>
-                        <hr class="text-muted" style="opacity: 0.1;">
-                        <div class="d-flex align-items-center mt-3">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop"
-                                alt="David" class="rounded-circle shadow-sm"
-                                style="width: 50px; height: 50px; object-fit: cover;">
-                            <div class="ms-3">
-                                <h6 class="fw-bold mb-0">David L.</h6>
-                                <small class="text-muted">Local Foodie</small>
+                        <div class="mt-auto">
+                            <hr class="text-muted" style="opacity: 0.1;">
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop"
+                                    alt="David" class="rounded-circle shadow-sm"
+                                    style="width: 50px; height: 50px; object-fit: cover;">
+                                <div class="ms-3 text-start">
+                                    <h6 class="fw-bold mb-0">David L.</h6>
+                                    <small class="text-muted">Local Foodie</small>
+                                </div>
                             </div>
                         </div>
                     </div>
