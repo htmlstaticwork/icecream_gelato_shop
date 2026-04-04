@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        if (localStorage.getItem('theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+    </script>
 </head>
 
 <body>
@@ -22,10 +25,7 @@
     <!-- Ingredients Hero -->
     <section class="hero-section text-center text-white position-relative"
         style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/ingredients-bg.jpeg') center/cover no-repeat;">
-        <img src="img/ice-cream-icon.png" class="hero-icon hero-icon-1" alt="Ice Cream">
-        <img src="img/cake-icon.png" class="hero-icon hero-icon-2" alt="Cake">
-        <img src="img/cookie-icon.png" class="hero-icon hero-icon-3" alt="Cookie">
-        <img src="img/candy-cane-icon.png" class="hero-icon hero-icon-4" alt="Candy Cane">
+
         <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
             <h1 class="display-3 fw-bold mb-4 font-heading fade-in-up">What's Inside <span class="text-primary-custom"
                     style="color: var(--primary-color) !important;">Our Scoops</span></h1>
@@ -43,10 +43,8 @@
                     <h4 class="h5 fw-bold text-muted mb-4">Pure & Creamy Foundations</h4>
                     <ul class="list-unstyled">
                         <li class="mb-4 d-flex align-items-center">
-                            <div class="icon-blob bg-primary-subtle text-primary rounded-circle me-3"
-                                style="width: 50px; height: 50px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
-                                <i class="fas fa-circle-check fa-lg"></i>
-                            </div>
+                            <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
+
                             <div>
                                 <h6 class="mb-0 fw-bold">Locally Sourced</h6>
                                 <p class="text-muted small mb-0">Only the freshest milk and cream from our neighboring
@@ -54,10 +52,8 @@
                             </div>
                         </li>
                         <li class="mb-4 d-flex align-items-center">
-                            <div class="icon-blob bg-primary-subtle text-primary rounded-circle me-3"
-                                style="width: 50px; height: 50px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
-                                <i class="fas fa-circle-check fa-lg"></i>
-                            </div>
+                            <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
+
                             <div>
                                 <h6 class="mb-0 fw-bold">Rich Texture</h6>
                                 <p class="text-muted small mb-0">A natural, velvety smoothness in every single scoop we
@@ -65,10 +61,7 @@
                             </div>
                         </li>
                         <li class="mb-4 d-flex align-items-center">
-                            <div class="icon-blob bg-primary-subtle text-primary rounded-circle me-3"
-                                style="width: 50px; height: 50px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
-                                <i class="fas fa-circle-check fa-lg"></i>
-                            </div>
+                            <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
                             <div>
                                 <h6 class="mb-0 fw-bold">100% Natural</h6>
                                 <p class="text-muted small mb-0">Absolutely zero artificial enhancers or fillers. Just
@@ -98,20 +91,15 @@
                     <h4 class="h5 fw-bold text-muted mb-4">Nature’s Sweetness</h4>
                     <ul class="list-unstyled">
                         <li class="mb-4 d-flex align-items-center">
-                            <div class="icon-blob bg-primary-subtle text-primary rounded-circle me-3"
-                                style="width: 50px; height: 50px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
-                                <i class="fas fa-circle-check fa-lg"></i>
-                            </div>
+                            <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
+
                             <div>
                                 <h6 class="mb-0 fw-bold">Seasonal Bounty</h6>
                                 <p class="text-muted small mb-0">From tree-ripened mangoes to sun-drenched berries.</p>
                             </div>
                         </li>
                         <li class="mb-4 d-flex align-items-center">
-                            <div class="icon-blob bg-primary-subtle text-primary rounded-circle me-3"
-                                style="width: 50px; height: 50px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
-                                <i class="fas fa-circle-check fa-lg"></i>
-                            </div>
+                            <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
                             <div>
                                 <h6 class="mb-0 fw-bold">Handpicked Quality</h6>
                                 <p class="text-muted small mb-0">Every piece of fruit is hand-inspected for peak
@@ -141,20 +129,15 @@
                     <h4 class="h5 fw-bold text-muted mb-4">Elevated Indulgence</h4>
                     <ul class="list-unstyled">
                         <li class="mb-4 d-flex align-items-center">
-                            <div class="icon-blob bg-primary-subtle text-primary rounded-circle me-3"
-                                style="width: 50px; height: 50px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
-                                <i class="fas fa-circle-check fa-lg"></i>
-                            </div>
+                            <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
+
                             <div>
                                 <h6 class="mb-0 fw-bold">Gourmet Chocolate</h6>
                                 <p class="text-muted small mb-0">Finest Belgian chocolate and rich cocoa powder.</p>
                             </div>
                         </li>
                         <li class="mb-4 d-flex align-items-center">
-                            <div class="icon-blob bg-primary-subtle text-primary rounded-circle me-3"
-                                style="width: 50px; height: 50px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
-                                <i class="fas fa-circle-check fa-lg"></i>
-                            </div>
+                            <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
                             <div>
                                 <h6 class="mb-0 fw-bold">Roasted Nuts</h6>
                                 <p class="text-muted small mb-0">Slow-roasted almonds and pistachios for the ultimate

@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        if (localStorage.getItem('theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+    </script>
 </head>
 
 <body>
@@ -22,10 +25,7 @@
     <!-- Flavors Hero -->
     <section class="hero-section text-center text-white position-relative"
         style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1501443762994-82bd5dace89a?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;">
-        <img src="img/ice-cream-icon.png" class="hero-icon hero-icon-1" alt="Ice Cream">
-        <img src="img/cake-icon.png" class="hero-icon hero-icon-2" alt="Cake">
-        <img src="img/cookie-icon.png" class="hero-icon hero-icon-3" alt="Cookie">
-        <img src="img/candy-cane-icon.png" class="hero-icon hero-icon-4" alt="Candy Cane">
+
         <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
             <h1 class="display-3 fw-bold mb-4 font-heading fade-in-up">Flavor <span class="text-primary-custom"
                     style="color: var(--primary-color) !important;">Paradise</span></h1>
@@ -73,10 +73,7 @@
                         <div class="card-body p-4">
                             <h4 class="card-title">Classic Vanilla</h4>
                             <p class="text-muted">Real Madagascar vanilla beans. Simple, elegant, and timeless.</p>
-                            <span class="badge rounded-pill bg-primary-subtle text-primary border-0 px-3 py-2"><i
-                                    class="fas fa-heart me-1"></i> Popular</span>
-                            <span class="badge rounded-pill bg-secondary-subtle text-secondary border-0 px-3 py-2"><i
-                                    class="fas fa-award me-1"></i> Classic</span>
+
                         </div>
                     </div>
                 </div>
@@ -90,8 +87,7 @@
                             <h4 class="card-title">Belgian Chocolate</h4>
                             <p class="text-muted">70% dark chocolate churned to smooth perfection. A chocoholic's dream.
                             </p>
-                            <span class="badge rounded-pill bg-secondary-subtle text-secondary border-0 px-3 py-2"><i
-                                    class="fas fa-award me-1"></i> Classic</span>
+
                         </div>
                     </div>
                 </div>
@@ -104,10 +100,7 @@
                         <div class="card-body p-4">
                             <h4 class="card-title">Coral Strawberry</h4>
                             <p class="text-muted">Sun-ripened local strawberries blended with rich sweet cream.</p>
-                            <span class="badge rounded-pill bg-danger-subtle text-danger border-0 px-3 py-2"><i
-                                    class="fas fa-sparkles me-1"></i> New</span>
-                            <span class="badge rounded-pill bg-info-subtle text-info border-0 px-3 py-2"><i
-                                    class="fas fa-calendar-star me-1"></i> Seasonal</span>
+
                         </div>
                     </div>
                 </div>
@@ -120,8 +113,7 @@
                         <div class="card-body p-4">
                             <h4 class="card-title">Vegan Coconut Mint</h4>
                             <p class="text-muted">Creamy coconut milk with fresh organic mint and cacao nibs.</p>
-                            <span class="badge rounded-pill bg-success-subtle text-success border-0 px-3 py-2"><i
-                                    class="fas fa-leaf me-1"></i> Vegan</span>
+
                         </div>
                     </div>
                 </div>
@@ -134,8 +126,7 @@
                         <div class="card-body p-4">
                             <h4 class="card-title">Salted Caramel</h4>
                             <p class="text-muted">House-made caramel with a touch of Mediterranean sea salt.</p>
-                            <span class="badge rounded-pill bg-primary-subtle text-primary border-0 px-3 py-2"><i
-                                    class="fas fa-heart me-1"></i> Popular</span>
+
                         </div>
                     </div>
                 </div>
@@ -148,10 +139,7 @@
                         <div class="card-body p-4">
                             <h4 class="card-title">Sun-Kissed Mango</h4>
                             <p class="text-muted">Dairy-free, fat-free, and full of tropical sunshine goodness.</p>
-                            <span class="badge rounded-pill bg-success-subtle text-success border-0 px-3 py-2"><i
-                                    class="fas fa-leaf me-1"></i> Vegan</span>
-                            <span class="badge rounded-pill bg-warning-subtle text-warning border-0 px-3 py-2"><i
-                                    class="fas fa-sun me-1"></i> Seasonal</span>
+
                         </div>
                     </div>
                 </div>
@@ -166,37 +154,34 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="ice-cream-card border-0 shadow-sm position-relative overflow-hidden card-h-100">
-                        <img src="https://images.unsplash.com/photo-1579954115545-a95591f28be0?q=80&w=800&auto=format&fit=crop"
+                        <img src="https://www.foodandwine.com/thmb/UIPKO9B7Y-4qSf0SEe-442XDXXU%3D/1500x0/filters%3Ano_upscale%28%29%3Amax_bytes%28150000%29%3Astrip_icc%28%29/honey-lavender-ice-cream-FT-RECIPE0621-19b325acffa94168b4ede52b05cce885.jpg"
                             class="card-img-top scoop-trigger" alt="Most Popular" style="cursor: pointer;">
                         <div class="pour-container"></div>
                         <div class="card-body p-4">
                             <h5 class="card-title fw-bold">Most Popular</h5>
                             <p class="text-muted small">Our legendary Salted Caramel that started it all.</p>
-                            <span class="badge rounded-pill bg-primary border-0 px-3 py-2">⭐ Best Seller</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="ice-cream-card border-0 shadow-sm position-relative overflow-hidden card-h-100">
-                        <img src="https://images.unsplash.com/photo-1505394033323-4241b211356e?q=80&w=800&auto=format&fit=crop"
+                        <img src="https://cdn11.bigcommerce.com/s-laaw2zen4n/images/stencil/original/image-manager/screen-shot-2021-04-30-at-9.59.17-am.png?t=1619802583"
                             class="card-img-top scoop-trigger" alt="Chef's Special" style="cursor: pointer;">
                         <div class="pour-container"></div>
                         <div class="card-body p-4">
                             <h5 class="card-title fw-bold">Chef’s Special</h5>
                             <p class="text-muted small">Honey Lavender infusion using local wildflower honey.</p>
-                            <span class="badge rounded-pill bg-danger border-0 px-3 py-2">🔥 Trending</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="ice-cream-card border-0 shadow-sm position-relative overflow-hidden card-h-100">
-                        <img src="https://images.unsplash.com/photo-1549395156-9747d27e1482?q=80&w=800&auto=format&fit=crop"
+                        <img src="https://png.pngtree.com/background/20250424/original/pngtree-create-an-image-of-a-vibrant-ice-cream-sundae-in-glass-picture-image_15560830.jpg"
                             class="card-img-top scoop-trigger" alt="Seasonal Hit" style="cursor: pointer;">
                         <div class="pour-container"></div>
                         <div class="card-body p-4">
                             <h5 class="card-title fw-bold">Seasonal Hit</h5>
                             <p class="text-muted small">Summer Berry Swirl with farm-fresh organic berries.</p>
-                            <span class="badge rounded-pill bg-info border-0 px-3 py-2">🌈 Limited Edition</span>
                         </div>
                     </div>
                 </div>

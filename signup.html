@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up | Join the Scoops & Smiles Sweet Club</title>
-    <meta name="description" content="Become a member of the Scoops & Smiles Sweet Club! Sign up for exclusive rewards, birthday treats, and be the first to know about our new seasonal flavors.">
+    <meta name="description"
+        content="Become a member of the Scoops & Smiles Sweet Club! Sign up for exclusive rewards, birthday treats, and be the first to know about our new seasonal flavors.">
     <link rel="icon" type="image/png" href="favicon.png">
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -13,6 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        if (localStorage.getItem('theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+    </script>
 </head>
 
 <body>
@@ -26,11 +30,7 @@
     </div>
 
     <div class="auth-page-wrapper position-relative">
-        <!-- Decorative Icons -->
-        <img src="img/ice-cream-icon.png" class="hero-icon hero-icon-1" alt="Ice Cream">
-        <img src="img/cake-icon.png" class="hero-icon hero-icon-2" alt="Cake">
-        <img src="img/cookie-icon.png" class="hero-icon hero-icon-3" alt="Cookie">
-        <img src="img/candy-cane-icon.png" class="hero-icon hero-icon-4" alt="Candy Cane">
+
 
         <div class="container">
             <div class="row justify-content-center">
@@ -60,7 +60,8 @@
                                 <div class="mb-3">
                                     <label for="password" class="form-label fw-bold small">Password</label>
                                     <div class="password-field">
-                                        <input type="password" class="form-control p-3 bg-light border-0" id="password" placeholder="Min. 8 characters" required>
+                                        <input type="password" class="form-control p-3 bg-light border-0" id="password"
+                                            placeholder="Min. 8 characters" required>
                                         <span class="toggle-password">
                                             <i class="fas fa-eye"></i>
                                         </span>

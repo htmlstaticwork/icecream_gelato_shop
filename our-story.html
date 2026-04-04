@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        if (localStorage.getItem('theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+    </script>
 </head>
 
 <body>
@@ -22,10 +25,7 @@
     <!-- Story Hero -->
     <section class="hero-section text-center text-white position-relative"
         style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;">
-        <img src="img/ice-cream-icon.png" class="hero-icon hero-icon-1" alt="Ice Cream">
-        <img src="img/cake-icon.png" class="hero-icon hero-icon-2" alt="Cake">
-        <img src="img/cookie-icon.png" class="hero-icon hero-icon-3" alt="Cookie">
-        <img src="img/candy-cane-icon.png" class="hero-icon hero-icon-4" alt="Candy Cane">
+
         <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
             <h1 class="display-3 fw-bold mb-4 font-heading fade-in-up">Our <span
                     style="color: var(--primary-color) !important;">Sweet Story</span></h1>
@@ -44,7 +44,7 @@
                             class="img-fluid scoop-trigger" alt="Our First Shop" style="cursor: pointer;">
                         <div class="pour-container"></div>
                         <div
-                            class="position-absolute bottom-0 start-0 m-4 p-3 bg-white rounded-4 shadow-sm d-none d-md-block border-start border-4 border-primary">
+                            class="position-absolute bottom-0 start-0 m-4 p-3 rounded-4 shadow-sm d-none d-md-block border-start border-4 border-primary history-label-card">
                             <h4 class="fw-bold mb-0" style="color: var(--primary-color);">Est. 2018</h4>
                         </div>
                     </div>

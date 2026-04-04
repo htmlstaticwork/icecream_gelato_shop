@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        if (localStorage.getItem('theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+    </script>
 </head>
 
 <body>
@@ -23,8 +26,9 @@
     <!-- Navbar -->
 
     <!-- Hero Slider Section -->
-    <section class="hero-section position-relative overflow-hidden" style="min-height: 85vh; display: flex; align-items: center;">
-        
+    <section class="hero-section position-relative overflow-hidden"
+        style="min-height: 85vh; display: flex; align-items: center;">
+
         <!-- Hero Background Slider -->
         <div id="heroSlider" class="hero-slider-bg position-absolute top-0 start-0 w-100 h-100">
             <div class="hero-slide active" style="background-image: url('img/hero-bg-1.png');"></div>
@@ -36,25 +40,91 @@
         <div class="container position-relative z-1 py-5 mt-5">
             <div class="row align-items-center">
                 <div class="col-lg-6 hero-content text-lg-start text-center mb-5 mb-lg-0 pe-lg-5" style="z-index: 10;">
-                    <span class="badge bg-primary text-white mb-3 px-3 py-2 rounded-pill fw-bold shadow-sm" style="letter-spacing: 1px;">PREMIUM ICE CREAM</span>
-                    <h1 class="display-3 fw-bold font-heading mb-4 text-dark shadow-text">Indulge in <br><span class="text-primary position-relative d-inline-block">Pure Happiness
-                        <svg class="position-absolute w-100 h-100 start-0 top-0 text-secondary" style="z-index: -1; transform: scale(1.1) translateY(10%); opacity: 0.2" viewBox="0 0 200 60"><path fill="currentColor" d="M0,40 Q100,0 200,40 Q100,80 0,40 Z"></path></svg>
-                    </span></h1>
-                    <p class="lead mb-5 text-dark fw-bold" style="max-width: 500px; text-shadow: 0 1px 2px rgba(255,255,255,0.8);">Experience the finest handcrafted ice cream, made with love and the freshest local ingredients. Every scoop is a celebration of flavor.</p>
+                    <span class="badge bg-primary text-white mb-3 px-3 py-2 rounded-pill fw-bold shadow-sm"
+                        style="letter-spacing: 1px;">PREMIUM ICE CREAM</span>
+                    <h1 class="display-3 fw-bold font-heading mb-4 text-dark shadow-text">Indulge in <br><span
+                            class="text-primary position-relative d-inline-block">Pure Happiness
+                            <svg class="position-absolute w-100 h-100 start-0 top-0 text-secondary"
+                                style="z-index: -1; transform: scale(1.1) translateY(10%); opacity: 0.2"
+                                viewBox="0 0 200 60">
+                                <path fill="currentColor" d="M0,40 Q100,0 200,40 Q100,80 0,40 Z"></path>
+                            </svg>
+                        </span></h1>
+                    <p class="lead mb-5 fw-bold text-white"
+                        style="max-width: 500px; text-shadow: 0 2px 8px rgba(0,0,0,0.4);">Experience the finest
+                        handcrafted ice cream, made with love and the freshest local ingredients. Every scoop is a
+                        celebration of flavor.</p>
                     <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
-                        <a href="flavors.html" class="btn btn-primary-custom btn-lg px-5 py-3 shadow-lg fs-4 fw-bold">Explore Our Flavors</a>
-                        <a href="about.html" class="btn btn-outline-dark btn-lg rounded-pill px-4 bg-white shadow-sm fs-5">Learn More</a>
+                        <a href="flavors.html"
+                            class="btn btn-primary-custom btn-lg px-5 py-3 shadow-lg fs-4 fw-bold">Explore Our
+                            Flavors</a>
                     </div>
                 </div>
-                <!-- Single Hero Image -->
-                <div class="col-lg-6 col-12 position-relative text-center d-flex flex-column justify-content-center align-items-center" style="min-height: 500px; z-index: 10;">
-                    <div class="hero-image-wrapper float-animation position-relative scoop-trigger" style="cursor: pointer;">
-                        <img src="img/hero-main.png" alt="Handcrafted Ice Cream" class="img-fluid" style="max-width: 450px; filter: drop-shadow(0 30px 50px rgba(0,0,0,0.2)); mix-blend-mode: multiply;">
-                        <div class="pour-container"></div>
-                    </div>
-                    <!-- Interactive Hint -->
-                    <div class="mt-4 px-4 py-2 bg-white rounded-pill shadow-sm animate-pulse" style="border: 2px dashed var(--primary-color);">
-                        <span class="text-primary fw-bold"><i class="fas fa-hand-pointer me-2"></i>Tap to Scoop Happiness!</span>
+                <!-- Premium Mosaic Hero Design -->
+                <div class="col-lg-6 col-12 position-relative d-flex justify-content-center align-items-center"
+                    style="min-height: 520px; z-index: 10;">
+                    <div class="hero-mosaic-wrapper position-relative" style="width: 480px; max-width: 100%;">
+
+                        <!-- Main Large Card -->
+                        <div class="hero-mosaic-main float-animation position-relative rounded-5 overflow-hidden shadow-lg"
+                            style="height: 340px;">
+                            <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?q=80&w=900&auto=format&fit=crop"
+                                class="w-100 h-100 object-fit-cover scoop-trigger" alt="Premium Ice Cream"
+                                style="cursor: pointer; transform: scale(1.05);">
+                            <div class="position-absolute inset-0 w-100 h-100"
+                                style="background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 60%);"></div>
+                            <div class="position-absolute bottom-0 start-0 p-4">
+                                <span class="badge rounded-pill bg-primary px-3 py-2 mb-2 d-block" style="width:fit-content;">Today's Special</span>
+                                <h4 class="text-white fw-bold mb-0 font-heading">Salted Caramel Dream</h4>
+                                <p class="text-white mb-0 small opacity-75">Handcrafted daily · Premium quality</p>
+                            </div>
+                            <div class="pour-container"></div>
+                        </div>
+
+                        <!-- Floating Mini Cards Row -->
+                        <div class="d-flex gap-3 mt-3">
+                            <!-- Mini Card 1 -->
+                            <div class="hero-mini-card flex-fill rounded-4 overflow-hidden shadow-sm float-animation-slow" style="height: 150px; animation-delay: 0.5s;">
+                                <img src="https://png.pngtree.com/background/20250209/original/pngtree-background-of-smooth-strawberry-ice-cream-texture-picture-image_13443103.jpg"
+                                    class="w-100 h-100 object-fit-cover scoop-trigger" alt="Strawberry"
+                                    style="cursor:pointer;">
+                                <div class="position-absolute bottom-0 start-0 w-100 px-2 pb-2"
+                                    style="background: linear-gradient(transparent, rgba(0,0,0,0.6));">
+                                    <small class="text-white fw-bold">Strawberry</small>
+                                </div>
+                            </div>
+                            <!-- Mini Card 2 -->
+                            <div class="hero-mini-card flex-fill rounded-4 overflow-hidden shadow-sm float-animation" style="height: 150px; animation-delay: 1s;">
+                                <img src="https://cdnimg.webstaurantstore.com/images/products/large/850672/2962573.jpg"
+                                    class="w-100 h-100 object-fit-cover scoop-trigger" alt="Mint Choc"
+                                    style="cursor:pointer;">
+                                <div class="position-absolute bottom-0 start-0 w-100 px-2 pb-2"
+                                    style="background: linear-gradient(transparent, rgba(0,0,0,0.6));">
+                                    <small class="text-white fw-bold">Mint Choc</small>
+                                </div>
+                            </div>
+                            <!-- Mini Card 3 -->
+                            <div class="hero-mini-card flex-fill rounded-4 overflow-hidden shadow-sm float-animation-slow" style="height: 150px; animation-delay: 1.5s;">
+                                <img src="https://png.pngtree.com/thumb_back/fw800/background/20251203/pngtree-scoop-of-vibrant-orange-mango-sorbet-on-a-dark-rustic-wooden-image_20714553.webp"
+                                    class="w-100 h-100 object-fit-cover scoop-trigger" alt="Mango"
+                                    style="cursor:pointer;">
+                                <div class="position-absolute bottom-0 start-0 w-100 px-2 pb-2"
+                                    style="background: linear-gradient(transparent, rgba(0,0,0,0.6));">
+                                    <small class="text-white fw-bold">Mango</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge -->
+                        <div class="position-absolute top-0 end-0 m-n2 float-animation"
+                            style="transform: translate(15px, -15px); z-index: 20; animation-delay: 0.3s;">
+                            <div class="rounded-circle d-flex flex-column align-items-center justify-content-center shadow-lg text-white fw-bold"
+                                style="width: 90px; height: 90px; background: var(--primary-color); font-size: 0.75rem;">
+                                <span style="font-size: 1.4rem;">🍦</span>
+                                <span>100+</span>
+                                <span>Flavors</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -64,6 +134,7 @@
 
     <!-- 2. Today's Featured Flavors -->
     <section class="section-padding">
+
         <div class="container text-center">
             <div class="section-title mb-5">
                 <h2 class="display-5 font-heading" style="color: #FF5252;">Today's Featured Flavors </h2>
@@ -249,8 +320,7 @@
         <div class="container position-relative z-1 py-5 my-3">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <div class="p-5 rounded-5 shadow-lg text-center text-white"
-                        style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.3);">
+                    <div class="glass-hero-card p-5 rounded-5 shadow-lg text-center text-white">
                         <h2 class="display-4 font-heading mb-3">Join the Scoop Club!</h2>
                         <p class="lead mb-5 px-lg-5" style="text-shadow: 0 2px 4px rgba(0,0,0,0.3);">Get exclusive
                             flavor alerts, sweet deals, and community event invites delivered right to your inbox.</p>
