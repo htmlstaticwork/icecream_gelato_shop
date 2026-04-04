@@ -4,43 +4,43 @@ document.addEventListener('DOMContentLoaded', function() {
         footerPlaceholder.innerHTML = `
             <footer class="footer bg-white pt-5">
                 <div class="container border-bottom pb-5">
-                    <div class="row g-4 justify-content-between">
-                        <div class="col-lg-4">
+                    <div class="row g-4">
+                        <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
                             <a class="navbar-brand mb-4 d-inline-block text-decoration-none" href="index.html">
                                 <i class="fas fa-ice-cream me-2"></i>Scoops & Smiles
                             </a>
-                            <p class="text-muted mb-4">Crafting joy, one scoop at a time. Join us in our mission to spread smiles through the magic of premium, artisanal ice cream.</p>
-                            <div class="footer-social d-flex gap-3">
+                            <p class="text-muted mb-4 small">Crafting joy, one scoop at a time. Join us in our mission to spread smiles through the magic of premium ice cream.</p>
+                            <div class="footer-social d-flex gap-2">
                                 <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                                 <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
                                 <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-4">
+                        <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
                             <h5 class="fw-bold mb-4">Quick Links</h5>
                             <ul class="list-unstyled footer-links">
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="our-story.html">Our Story</a></li>
+                                <li><a href="our-story.html">Story</a></li>
                                 <li><a href="flavors.html">Flavors</a></li>
-                                <li><a href="menu.html">Menu Card</a></li>
+                                <li><a href="menu.html">Menu</a></li>
                             </ul>
                         </div>
-                        <div class="col-lg-2 col-md-4">
+                        <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
                             <h5 class="fw-bold mb-4">Support</h5>
                             <ul class="list-unstyled footer-links">
-                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="contact.html">Contact</a></li>
                                 <li><a href="ingredients.html">Ingredients</a></li>
                                 <li><a href="catering.html">Catering</a></li>
                                 <li><a href="signup.html">Join Member</a></li>
                             </ul>
                         </div>
-                        <div class="col-lg-3 col-md-4">
-                            <h5 class="fw-bold mb-4">Newsletter</h5>
-                            <p class="text-muted small mb-4">Subscribe to get the latest flavor updates and sweet offers!</p>
+                        <div class="col-sm-6 col-lg-3">
+                            <h5 class="fw-bold mb-4">Join Us</h5>
+                            <p class="text-muted small mb-4">Get sweet updates & offers!</p>
                             <div class="input-group mb-3 news-letter-field">
-                                <input type="email" class="form-control rounded-pill-start border-end-0 ps-4" placeholder="Your email">
-                                <button class="btn btn-primary-custom rounded-pill-end px-4" type="button">Go</button>
+                                <input type="email" class="form-control rounded-pill-start border-end-0 ps-3" placeholder="Email">
+                                <button class="btn btn-primary-custom rounded-pill-end px-3" type="button">Go</button>
                             </div>
                         </div>
                     </div>
