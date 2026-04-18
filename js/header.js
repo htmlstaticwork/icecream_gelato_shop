@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                     <i class="fas fa-moon"></i>
                                 </span>
                                 <span id="rtl-toggle" class="nav-icon" title="Toggle RTL">
-                                    <i class="fas fa-language"></i>
+                                    <i class="fas fa-left-right"></i>
                                 </span>
                             </li>
                             <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
